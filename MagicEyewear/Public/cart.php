@@ -112,7 +112,7 @@
                   </div>
                 </form>
               </div>
-              <div class="row">
+              <!-- <div class="row">
                 <div class="col-lg-3 col-md-6">
                   <div class="box text-uppercase mt-0 mb-2">
                     <h3>You may also like these products</h3>
@@ -137,7 +137,7 @@
                   </div>
                 </div>
                
-              </div>
+              </div> -->
             </div>
             <div class="col-lg-3">
               <div id="order-summary" class="box mt-0 mb-4 p-0">
