@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=EB+Garamond:ital,wght@0,500;1,800&display=swap');
+
+
+body {
+background:white;
+	background-attachment: fixed;	
+	background-size: cover;
+  
+	}
+
+#container{
+	box-shadow: 0 15px 30px 1px grey;
+	background: rgba(255, 255, 255, 0.90);
+	text-align: center;
+	border-radius: 5px;
+	overflow: hidden;
+	margin: 5em auto;
+	height: 350px;
+	width: 700px;
+  
+	
+}
+
+
+
+.product-details {
+	position: relative;
+	text-align: left;
+	overflow: hidden;
+	padding: 30px;
+	height: 100%;
+	float: left;
+	width: 40%;
+
+}
+
+#container .product-details h1{
+	font-family: 'Bebas Neue', cursive;
+	display: inline-block;
+	position: relative;
+	font-size: 30px;
+	color: #344055;
+	margin: 0;
+	
+}
+
+#container .product-details h1:before{
+	position: absolute;
+	content: '';
+	right: 0%; 
+	top: 0%;
+	transform: translate(25px, -15px);
+	font-family: 'Bree Serif', serif;
+	display: inline-block;
+	background: #ffe6e6;
+	border-radius: 5px;
+	font-size: 14px;
+	padding: 5px;
+	color: white;
+	margin: 0;
+	animation: chan-sh 6s ease infinite;
+
+}
+
+
+
+	
+
+
+
+
+
+#container .product-details > p {
+font-family: 'EB Garamond', serif;
+	text-align: center;
+	font-size: 18px;
+	color: #7d7d7d;
+	
+}
+.control{
+	position: absolute;
+	bottom: 20%;
+	left: 22.8%;
+	
+}
+.btn {
+
+	transform: translateY(0px);
+	transition: 0.3s linear;
+	background:  #1B98E0;
+	border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	color: #eee;
+	padding: 0;
+	margin: 0;
+	
+}
+
+.btn:hover{transform: translateY(-6px);}
+
+.btn span {
+	font-family: 'Farsan', cursive;
+	transition: transform 0.3s;
+	display: inline-block;
+  padding: 10px 20px;
+	font-size: 1.2em;
+	margin:0;
+	
+}
+
+
+
+
+.btn .buy {z-index: 3; font-weight: bolder;}
+
+
+.product-image {
+	transition: all 0.3s ease-out;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	float: right;
+	width: 50%;
+	display: inline-block;
+}
+
+#container img {width: 100%;height: 100%;}
+
+.info {
+    background: rgba(43, 49, 53, 0.9);
+    font-family: 'Bree Serif', serif;
+    transition: all 0.3s ease-out;
+    transform: translateX(-100%);
+    position: absolute;
+    line-height: 1.8;
+    text-align: left;
+    font-size: 105%;
+    color: #FFF;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.info h2 {text-align: center}
+.product-image:hover .info{transform: translateX(0);}
+
+
+.product-image:hover img {transition: all 0.3s ease-out;}
+.product-image:hover img {transform: scale(1.1, 1.1);}
+
+
+/* Check-mark list */
+
+
+ul.checkmark li {
+    font-size: 16px; /* this determines the size of the list text and therefore checkmark size */
+    list-style-type: none; /* remove default list style */
+    margin-bottom: 1em; /* lists need to be able to breathe */
+    padding: 0.25em 0 0 2.5em; /* make room for the circle */
+    position: relative; /* because we want to position the circle in an absolute fashion */
+  }
+
+  ul.checkmark li {
+    font-size: 16px; /* this determines the size of the list text and therefore checkmark size */
+    list-style-type: none; /* remove default list style */
+    margin-bottom: 1em; /* lists need to be able to breathe */
+    padding: 0.25em 0 0 2.5em; /* make room for the circle */
+    position: relative; /* because we want to position the circle in an absolute fashion */
+  }
+
+  ul.checkmark li:before {
+    content: " "; /* the circle itself is empty*/
+    display: block;
+    border: solid 0.8em #1B98E0; /* create a colored area..*/
+    border-radius: .8em; /* ... and turn it into a circle*/
+    height: 0;
+    width: 0;
+    position: absolute; /* the circle is then put into place*/
+    left: 0.5em;
+    top: 40%; 
+    margin-top: -0.5em;
+  }
+
+  ul.checkmark li:after {
+    content: " ";
+    display: block;
+    width: 0.3em; /* the short bar of the mark is half as long as the long bar*/
+    height: 0.6em;
+    border: solid white;
+    border-width: 0 0.2em 0.2em 0; /* creates the inverted "L" shape*/
+    position: absolute;
+    left: 1em;
+    top: 40%;
+    margin-top: -0.2em;
+    -webkit-transform: rotate(45deg); /* tilts the shape*/
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
