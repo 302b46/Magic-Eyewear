@@ -11,7 +11,7 @@
 	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
 	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="css/clientProfile.css" id="theme-stylesheet">
+  <link rel="stylesheet" href="CSS/clientProfile.css" id="theme-stylesheet">
 </head>
 
 <body>
@@ -20,8 +20,6 @@
 <div class="row">
   <div class="profile-nav col-md-3">
       <div class="panel">
-         
-
           <ul class="nav nav-pills nav-stacked">
               <li class="active"><a href="#"> <i class="fa fa-user"></i> Profile</a></li>
               <li><a href="#"> <i class="fa fa-calendar"></i> Order History </a></li>
