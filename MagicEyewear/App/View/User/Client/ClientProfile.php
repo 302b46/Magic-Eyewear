@@ -3,7 +3,6 @@
 <html lang="en" dir="ltr">
   <title>Customer Profile</title>
 
-
   <head>
     <meta charset="utf-8">
 
