@@ -1,3 +1,23 @@
+body {
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+  }
+  .row.no-space {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .row.no-space div[class*="col-"] {
+    padding: 0;
+  }
+  
+  .row.no-space .box-image {
+    margin: 0;
+  }
 .owl-thumbs {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -16,6 +36,9 @@
     color: #467fbf;
     border-radius: 0 !important;
     text-decoration: none;
+    width: 200px;
+    height: 50px;
+    font-size:20px;
   }
   
   .btn-template-outlined:hover, .btn-template-outlined:focus {
@@ -47,4 +70,79 @@
   .btn-template-outlined-black:hover, .btn-template-outlined-black:focus {
     background: #333 !important;
     color: #fff !important;
+  }
+  #productMain .sizes {
+    text-align: center;
+  }
+  
+  #productMain .sizes a {
+    text-decoration: none !important;
+  }
+  
+  #productMain .sizes a:hover {
+    background: #467fbf;
+    color: #fff;
+  }
+  
+  #productMain .price {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 30px 0;
+    color: #555;
+  }
+  
+  .product {
+    text-align: center;
+    position: relative;
+    margin-bottom: 40px;
+  }
+  
+  .product .image {
+    overflow: hidden;
+    max-height: 190px;
+  }
+  
+  .product .image a {
+    margin: 0;
+  }
+  
+  .product .text {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .product .text h3 {
+    min-height: 63px;
+  }
+  
+  .product .price {
+    font-size: 1.1rem;
+  }
+  
+  .product .price del {
+    color: #999;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  
+  .product img {
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+  .product:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  
+  .product:hover .text {
+    border-color: #555;
+  }
+  
+  .product a {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #333;
+    text-decoration: none !important;
+    margin-top: 15px;
   }
