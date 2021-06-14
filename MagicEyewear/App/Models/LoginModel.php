@@ -1,8 +1,8 @@
 <?php 
 
-require_once (__dir__ . '/DatabaseConnection.php');
+require_once (__dir__ . '/database.php');
 
-class LoginModel extends DatabaseConnection
+class LoginModel extends Database
 {
       /**
       * @param string

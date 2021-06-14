@@ -1,4 +1,4 @@
-<!-- include everything  -->
+<!-- Include everything  -->
 <!-- Initialization file -->
 <?php
 
