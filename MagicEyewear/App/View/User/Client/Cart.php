@@ -19,7 +19,8 @@
     <link rel="stylesheet" href="../../../../MagicEyewear/vendor/owl.carousel/assets/owl.carousel.css">
     <link rel="stylesheet" href="../../../../MagicEyewear/vendor/owl.carousel/assets/owl.theme.default.css">
     <!-- Custom stylesheet - for your changes-->
-    <link rel="stylesheet" href="../../../../MagicEyewear/Public/CSS/cart.css">
+    <link rel="stylesheet" href="../../../../Public/CSS/cart.cs?v=<?php echo time(); ?>">
+    <!-- <link rel="stylesheet" href="../../../../Public/CSS/cart.css"> -->
     <!-- Favicon and apple touch icons-->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
