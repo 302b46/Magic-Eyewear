@@ -17,6 +17,10 @@ define('PROTOCAL','http');
 
 /*root and asset paths*/
 
+// App Root
+//echo dirname(dirname(__FILE__));
+define('APPROOT', dirname(dirname(__FILE__)));
+
 $path = str_replace("\\", "/",PROTOCAL ."://" . $_SERVER['SERVER_NAME'] . __DIR__  . "/");
 $path = str_replace($_SERVER['DOCUMENT_ROOT'], "", $path);
 
