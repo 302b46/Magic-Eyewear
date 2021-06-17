@@ -36,15 +36,17 @@
                   </div>
                 </div>
               </div>
+              <div class="portlet-body">
+                <div>
               <!-- Nav Tabs -->
               <ul class="nav nav-tabs">
                 <li class="nav-item"><a href="" class="active nav-link">Edit Profile</a></li>
-                <li class="nav-item"><a href="" class="active nav-link">Order History</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Order History</a></li>
               </ul>
 
               <!-- Tab Panes -->
               <div class="tab-content pt-3">
-              <div role="tabpanel" class="tab-pane active" id="edit">
+                <div role="tabpanel" class="tab-pane active" id="edit">
                   <form class="form" novalidate="">
                     <div class="row">
                       <div class="col">
@@ -110,8 +112,10 @@
                   </form>
 
                 </div>
-                <div role="tabpanel" class="tab-pane active" id="profile">Order History</div>
+                <div role="tabpanel" class="tab-pane" id="history">Order History</div>
               </div>
+            </div>
+            </div>
             </div>
           </div>
         </div>
