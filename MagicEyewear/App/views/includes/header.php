@@ -1,6 +1,4 @@
 
-<html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,10 +7,10 @@
     <link rel="stylesheet" type="text/css" href="<?=ASSETS?>css/headerCSS/style.min.css">
     <link rel="stylesheet" type="text/css" href="<?=ASSETS?>css/headerCSS/reset.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script defer src="https://friconix.com/cdn/friconix.js"> </script>
 
 </head>
 
-<body>
     <!-- Section: Header -->
     <header class="header">
         <div class="container">
@@ -27,10 +25,10 @@
                 <div class="header-item-center">
                     <div class="overlay"></div>
                     <nav class="menu">
-                        <div class="menu-mobile-header">
+                         <div class="menu-mobile-header">
                             <button type="button" class="menu-mobile-arrow"><i class="fas fa-arrow-circle-left"></i></button>
                             <div class="menu-mobile-title"></div>
-                            <button type="button" class="menu-mobile-close"><i class="far fa-window-close"></i></button>
+                            <button type="button" class="menu-mobile-close"><i class="fi-xwluxl-times-wide"></i></button>
                         </div>
                         <!-- LOGO FO2 AL MENU 
                         <ul> 
@@ -42,7 +40,7 @@
                             <!-- <li><a href="#">Home</a></li> -->
                             
                             <li class="menu-item-has-children">
-                                <a href="#">Medical Glasses <i class="fas fa-chevron-down"></i></a>
+                                <a href="#">Medical Glasses <i class="fi-xnldxl-chevron"></i></a>
                                 <div class="menu-subs menu-mega menu-column-4">
                                     <div class="list-item">
                                         <h4 class="title">Shop By Age Group</h4>
@@ -69,7 +67,7 @@
 
 
                             <li class="menu-item-has-children">
-                                <a href="#">Sunglasses <i class="fas fa-chevron-down"></i></a>
+                                <a href="#">Sunglasses <i class="fi-xnldxl-chevron"></i></a>
                                 <div class="menu-subs menu-mega menu-column-4">
                                     <div class="list-item">
                                         <h4 class="title">Shop By Age Group</h4>
@@ -95,7 +93,7 @@
 
 
                             <li class="menu-item-has-children">
-                                <a href="#">Sports <i class="fas fa-chevron-down"></i></a>
+                                <a href="#">Sports <i class="fi-xnldxl-chevron"></i></a>
                                 <div class="menu-subs menu-mega menu-column-4">
                                     <div class="list-item">
                                         <h4 class="title">Shop By Age Group</h4>
@@ -120,29 +118,29 @@
                             </li>
 
                             <li class="menu-item-has-children">
-                                <a href="#">Brands <i class="fas fa-chevron-down"></i></a>
+                                <a href="#">Brands <i class="fi-xnldxl-chevron"></i></a>
                                 <div class="menu-subs menu-mega menu-column-4">
                                     <div class="list-item text-center">
                                         <a href="#">
-                                            <img src="<?=ASSETS?>images/" class="responsive" alt="brandimg">
+                                            <img src="<?=ASSETS?>images/Ray-Ban.png" class="responsive" alt="brandimg">
                                             <h4 class="title">Brand Name 1</h4>
                                         </a>
                                     </div>
                                     <div class="list-item text-center">
                                         <a href="#">
-                                            <img src="<?=ASSETS?>images/" class="responsive" alt="brandimg">
+                                            <img src="<?=ASSETS?>images/Ray-Ban.png" class="responsive" alt="brandimg">
                                             <h4 class="title">Brand Name 2</h4>
                                         </a>
                                     </div>
                                     <div class="list-item text-center">
                                         <a href="#">
-                                            <img src="<?=ASSETS?>images/" class="responsive" alt="brandimg">
+                                            <img src="<?=ASSETS?>images/Ray-Ban.png" class="responsive" alt="brandimg">
                                             <h4 class="title">Brand Name 3</h4>
                                         </a>
                                     </div>
                                     <div class="list-item text-center">
                                         <a href="#">
-                                            <img src="<?=ASSETS?>images/" class="responsive" alt="New Product">
+                                            <img src="<?=ASSETS?>images/Ray-Ban.png" class="responsive" alt="New Product">
                                             <h4 class="title">Brand Name 4</h4>
                                         </a>
                                     </div>
@@ -181,6 +179,4 @@
 
     
 <script src="<?=ASSETS?>js/header.js" defer></script> 
-    
-</body>
-</html>
+
