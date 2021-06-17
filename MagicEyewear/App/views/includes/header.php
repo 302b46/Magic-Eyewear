@@ -180,7 +180,7 @@
 -->
 
     
-<script src="./js/header.js" defer></script> 
+<script src="<?=ASSETS?>js/header.js" defer></script> 
     
 </body>
 </html>
