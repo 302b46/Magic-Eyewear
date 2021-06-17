@@ -8,6 +8,4 @@ require "../app/core/functions.php";
 
 
 
-
-
 ?>
