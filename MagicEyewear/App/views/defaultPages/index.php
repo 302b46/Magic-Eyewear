@@ -62,25 +62,26 @@
 
 <br>
 <br>
-<h2> Shop By Age Group </h2>
+<div class="middlepage1">
+    <h2> Shop By Age Group </h2>
 
-<div style="clear: both">
-    <h3 style="float: left">Adults</h3>
-    <h3 style="float: right">Kids</h3>
+    <div style="clear: both">
+        <h3 style="float: left">Adults</h3>
+        <h3 style="float: right">Kids</h3>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="btn_group">	
+        <button class="btn-change" id="women" style=" width:50%; height:250px">SHOP WOMEN</button>
+        <button class="btn-change" id="girls" style="width:50%; height:250px">SHOP GIRLS</button>
+    </div>
+    <div class="btn_group">	
+        <button class="btn-change" id="men" style=" width:50%; height:250px">SHOP MEN</button>
+        <button class="btn-change" id="boys" style="width:50%; height:250px">SHOP BOYS</button>
+    </div>
 </div>
-
-<br>
-<br>
-
-<div class="btn_group">	
-  <button class="btn-change" id="women" style=" width:50%; height:250px">SHOP WOMEN</button>
-  <button class="btn-change" id="girls" style="width:50%; height:250px">SHOP GIRLS</button>
-</div>
-<div class="btn_group">	
-  <button class="btn-change" id="men" style=" width:50%; height:250px">SHOP MEN</button>
-  <button class="btn-change" id="boys" style="width:50%; height:250px">SHOP BOYS</button>
-</div>
-
 <?php $this->view("includes/footer",$data);?>   
 
 </body>
