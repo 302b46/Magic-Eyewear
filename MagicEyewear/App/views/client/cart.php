@@ -18,7 +18,7 @@
     <div class="row">
 
       <!--Grid column-->
-      <div class="col-lg-8">
+      <div class="col-lg-5">
 
         <!-- Card -->
         <div class="mb-2">
@@ -137,7 +137,7 @@
         <div class="mb-3">
           <div class="pt-4">
 
-            <h5 class="mb-3">The total amount of</h5>
+            <h5 class="mb-3">The Total Amount of:</h5>
 
             <ul class="list-group list-group-flush">
               <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
@@ -159,7 +159,7 @@
               </li>
             </ul>
 
-            <button type="button" class="btn btn-primary btn-block">go to checkout</button>
+            <button type="button" class="btn btn-primary btn-block">Reserve Products</button>
 
           </div>
         </div>
