@@ -1,4 +1,4 @@
-<?php  $this->view("includes/header",$data);?>   
+
 <html>
     <head>
         <title><?php echo $data['page_title']?> </title>
@@ -16,8 +16,11 @@
         
     </head>
     <body>
+
+<?php  $this->view("includes/header",$data);?>   
 <br><br>
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<br><br>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" >
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -63,6 +66,7 @@
 <br>
 <br>
 <div class="middlepage1">
+
     <h2> Shop By Age Group </h2>
 
     <div style="clear: both">
@@ -81,7 +85,13 @@
         <button class="btn-change" id="men" style=" width:50%; height:250px">SHOP MEN</button>
         <button class="btn-change" id="boys" style="width:50%; height:250px">SHOP BOYS</button>
     </div>
+    <hr>
 </div>
+
+<div class="middlepage2">
+    <h1>ADS</h1>
+</div>
+
 <?php $this->view("includes/footer",$data);?>   
 
 </body>
