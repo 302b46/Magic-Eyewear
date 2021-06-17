@@ -25,6 +25,7 @@ $path = str_replace($_SERVER['DOCUMENT_ROOT'], "", $path);
 
 // Path to public folder 
 define('ROOT', str_replace("App/core", "public", $path));
+
 // Path to public assets folder
 define('ASSETS', str_replace("App/core", "public/assets", $path));
 
