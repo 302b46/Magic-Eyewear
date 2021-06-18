@@ -18,7 +18,7 @@
                 <div class="header-item-left">
                     <!-- <h1><a href="#" class="brand">Store</a></h1> --> <!-- LOGO 3LA LEFT -->
                     <ul> 
-                        <a href="#"><img src="<?=ASSETS?>images/eyecare-logo.png" style="margin:auto; " alt="logo" /></a>
+                        <a href="<?=ROOT?>homepage"><img src="<?=ASSETS?>images/eyecare-logo.png" style="margin:auto; " alt="logo" /></a>
                     </ul>
                 </div>
                 <!-- Section: Navbar Menu -->
@@ -118,7 +118,7 @@
                             </li>
 
                             <li class="menu-item-has-children">
-                                <a href="<?=ROOT?>brand">Brands <i class="fi-xnldxl-chevron"></i></a>
+                                <a href="<?=ROOT?>ShopByBrand">Brands <i class="fi-xnldxl-chevron"></i></a>
                                 <div class="menu-subs menu-mega menu-column-4">
                                     <div class="list-item text-center">
                                         <a href="#">
@@ -149,7 +149,7 @@
 
 
                             <li><a href="#">Frames Guide</a></li>
-                            <li><a href="#">About Us</a></li>
+                            <li><a href="<?=ROOT?>aboutus">About Us</a></li>
                         </ul>
                     </nav>
                 </div>

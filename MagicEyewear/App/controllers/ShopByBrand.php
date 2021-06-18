@@ -1,6 +1,6 @@
 <?php
 
-class brand extends Controller
+class ShopByBrand extends Controller
 {
     //Shows page
     function index()
