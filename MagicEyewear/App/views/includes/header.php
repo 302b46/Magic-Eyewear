@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="<?=ASSETS?>css/headerCSS/reset.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script defer src="https://friconix.com/cdn/friconix.js"> </script>
-
+    <script src="<?=ASSETS?>js/header.js" defer></script> 
 </head>
 
     <!-- Section: Header -->
@@ -40,7 +40,7 @@
                             <!-- <li><a href="#">Home</a></li> -->
                             
                             <li class="menu-item-has-children">
-                                <a href="#">Medical Glasses <i class="fi-xnldxl-chevron"></i></a>
+                                <a href="">Medical Glasses <i class="fi-xnldxl-chevron"></i></a>
                                 <div class="menu-subs menu-mega menu-column-4">
                                     <div class="list-item">
                                         <h4 class="title">Shop By Age Group</h4>
@@ -54,13 +54,13 @@
                                     </div>
                                     
                                     <div class="list-item">
-                                        <img src="<?=ASSETS?>images/" class="responsive" alt="Shop Product">
+                                        <img src="<?=ASSETS?>images/women.jpg" class="responsive" alt="Shop Product">
                                     </div>
                                     <div class="list-item">
-                                        <img src="<?=ASSETS?>images/" class="responsive" alt="Shop Product">
+                                        <img src="<?=ASSETS?>images/women.jpg" class="responsive" alt="Shop Product">
                                     </div>
                                     <div class="list-item">
-                                        <img src="<?=ASSETS?>images/" class="responsive" alt="Shop Product">
+                                        <img src="<?=ASSETS?>images/women.jpg" class="responsive" alt="Shop Product">
                                     </div>
                                 </div>
                             </li>
@@ -80,13 +80,13 @@
                                     </div>
 
                                     <div class="list-item">
-                                        <img src="<?=ASSETS?>images/" class="responsive" alt="Shop Product">
+                                        <img src="<?=ASSETS?>images/men.jpg" class="responsive" alt="Shop Product">
                                     </div>
                                     <div class="list-item">
-                                        <img src="<?=ASSETS?>images/" class="responsive" alt="Shop Product">
+                                        <img src="<?=ASSETS?>images/men.jpg" class="responsive" alt="Shop Product">
                                     </div>
                                     <div class="list-item">
-                                        <img src="<?=ASSETS?>images/" class="responsive" alt="Shop Product">
+                                        <img src="<?=ASSETS?>images/men.jpg" class="responsive" alt="Shop Product">
                                     </div>
                                 </div>
                             </li>
@@ -106,19 +106,19 @@
                                     </div>
 
                                     <div class="list-item">
-                                        <img src="<?=ASSETS?>images/" class="responsive" alt="Shop Product">
+                                        <img src="<?=ASSETS?>images/women.jpg" class="responsive" alt="Shop Product">
                                     </div>
                                     <div class="list-item">
-                                        <img src="<?=ASSETS?>images/" class="responsive" alt="Shop Product">
+                                        <img src="<?=ASSETS?>images/women.jpg" class="responsive" alt="Shop Product">
                                     </div>
                                     <div class="list-item">
-                                        <img src="<?=ASSETS?>images/" class="responsive" alt="Shop Product">
+                                        <img src="<?=ASSETS?>images/women.jpg" class="responsive" alt="Shop Product">
                                     </div>
                                 </div>
                             </li>
 
                             <li class="menu-item-has-children">
-                                <a href="#">Brands <i class="fi-xnldxl-chevron"></i></a>
+                                <a href="<?=ROOT?>brand">Brands <i class="fi-xnldxl-chevron"></i></a>
                                 <div class="menu-subs menu-mega menu-column-4">
                                     <div class="list-item text-center">
                                         <a href="#">
@@ -178,5 +178,5 @@
 -->
 
     
-<script src="<?=ASSETS?>js/header.js" defer></script> 
+
 
