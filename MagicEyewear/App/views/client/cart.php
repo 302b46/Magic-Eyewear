@@ -10,7 +10,7 @@
     <script defer src="https://friconix.com/cdn/friconix.js"> </script>
 
   </head>
-  <body class="skin-light">
+  <body class="template-product js-theme-loaded" data-anim-fade="false" data-anim-load="true" data-anim-interval-style="fade_down" data-anim-zoom="false" data-anim-interval="true" style="height: 100%;" data-new-gr-c-s-check-loaded="14.1015.0" data-gr-ext-installed="">
     <!--Section: Block Content-->
   <section class="cart"> 
 <div class="container">
