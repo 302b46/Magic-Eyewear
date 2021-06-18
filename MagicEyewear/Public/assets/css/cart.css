@@ -1,7 +1,8 @@
 .skin-light body {
     font-family: Tahoma, Verdana, Segoe, sans-serif;
-  }
-body{
-    align-content:center;
     float:center;
-}  
+  }
+section{
+    align-content:center;
+    align-items: center;
+}

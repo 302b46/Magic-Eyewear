@@ -1,18 +1,24 @@
-<!DOCTYPE html>
+<?php $this->view("includes/header",$data);?>   
+
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Cart</title>
+    <title><?=$data['page_title'] . " | " . WEBSITE_TITLE?></title>
     <link rel="stylesheet" href="<?=ASSETS?>css/cart.css">
-
+<!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<link rel="stylesheet" href="https://mdbootstrap.com/previews/ecommerce-demo/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://mdbootstrap.com/previews/ecommerce-demo/css/mdb-pro.min.css">
-<link rel="stylesheet" href="https://mdbootstrap.com/previews/ecommerce-demo/css/mdb.ecommerce.min.css">
+    
+    <link rel="stylesheet" href="https://mdbootstrap.com/previews/ecommerce-demo/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://mdbootstrap.com/previews/ecommerce-demo/css/mdb-pro.min.css">
+    
+    <link rel="stylesheet" href="https://mdbootstrap.com/previews/ecommerce-demo/css/mdb.ecommerce.min.css">
+    <script defer src="https://friconix.com/cdn/friconix.js"> </script>
+
   </head>
   <body class="skin-light">
     <!--Section: Block Content-->
   <section>
+<div class="container">
 
     <!--Grid row-->
     <div class="row">
@@ -57,15 +63,12 @@
                         <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
                           class="plus increase"></button>
                       </div>
-                      <small id="passwordHelpBlock" class="form-text text-muted text-center">
-                        (Note, 1 piece)
-                      </small>
+                      
                     </div>
                   </div>
                   <div class="d-flex justify-content-between align-items-center">
                     <div>
-                      <a href="#!" type="button" class="card-link-secondary small text-uppercase mr-3"><i
-                          class="fas fa-trash-alt mr-1"></i> Remove item </a>
+                      <a href="#!" type="button" class="card-link-secondary small text-uppercase mr-3"><i class="fi-xnsuxl-trash-solid"></i> Remove item </a>
                       
                     </div>
                     <p class="mb-0"><span><strong id="summary">$17.99</strong></span></p class="mb-0">
@@ -109,8 +112,7 @@
                   </div>
                   <div class="d-flex justify-content-between align-items-center">
                     <div>
-                      <a href="#!" type="button" class="card-link-secondary small text-uppercase mr-3"><i
-                          class="fas fa-trash-alt mr-1"></i> Remove item </a>
+                      <a href="#!" type="button" class="card-link-secondary small text-uppercase mr-3"><i class="fi-xnsuxl-trash-solid"></i> Remove item </a>
                       
                     </div>
                     <p class="mb-0"><span><strong>$35.99</strong></span></p class="mb-0">
@@ -118,8 +120,7 @@
                 </div>
               </div>
             </div>
-            <p class="text-primary mb-0"><i class="fas fa-info-circle mr-1"></i> Do not delay the purchase, adding
-              items to your cart does not mean booking them.</p>
+            
 
           </div>
         </div>
@@ -144,10 +145,7 @@
                 Temporary amount
                 <span>$25.98</span>
               </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center px-0">
-                Shipping
-                <span>Gratis</span>
-              </li>
+              
               <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
                 <div>
                   <strong>The total amount of</strong>
@@ -159,7 +157,7 @@
               </li>
             </ul>
 
-            <button type="button" class="btn btn-primary btn-block">Reserve Products</button>
+            <button type="button" class="btn btn-primary btn-block" style="font-size:15px;">Reserve Products</button>
 
           </div>
         </div>
@@ -171,8 +169,10 @@
 
     </div>
     <!-- Grid row -->
-
+    </div>
   </section>
   <!--Section: Block Content-->
+  <?php $this->view("includes/Footer",$data);?>   
+
 </body>
 </html>

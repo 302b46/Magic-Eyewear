@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="<?=ASSETS?>css/headerCSS/reset.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script defer src="https://friconix.com/cdn/friconix.js"> </script>
-
+    <script src="<?=ASSETS?>js/header.js" defer></script> 
 </head>
 
     <!-- Section: Header -->
@@ -18,7 +18,7 @@
                 <div class="header-item-left">
                     <!-- <h1><a href="#" class="brand">Store</a></h1> --> <!-- LOGO 3LA LEFT -->
                     <ul> 
-                        <a href="#"><img src="<?=ASSETS?>images/eyecare-logo.png" style="margin:auto; " alt="logo" /></a>
+                        <a href="<?=ROOT?>homepage"><img src="<?=ASSETS?>images/eyecare-logo.png" style="margin:auto; " alt="logo" /></a>
                     </ul>
                 </div>
                 <!-- Section: Navbar Menu -->
@@ -40,7 +40,7 @@
                             <!-- <li><a href="#">Home</a></li> -->
                             
                             <li class="menu-item-has-children">
-                                <a href="#">Medical Glasses <i class="fi-xnldxl-chevron"></i></a>
+                                <a href="">Medical Glasses <i class="fi-xnldxl-chevron"></i></a>
                                 <div class="menu-subs menu-mega menu-column-4">
                                     <div class="list-item">
                                         <h4 class="title">Shop By Age Group</h4>
@@ -54,13 +54,13 @@
                                     </div>
                                     
                                     <div class="list-item">
-                                        <img src="<?=ASSETS?>images/" class="responsive" alt="Shop Product">
+                                        <img src="<?=ASSETS?>images/women.jpg" class="responsive" alt="Shop Product">
                                     </div>
                                     <div class="list-item">
-                                        <img src="<?=ASSETS?>images/" class="responsive" alt="Shop Product">
+                                        <img src="<?=ASSETS?>images/women.jpg" class="responsive" alt="Shop Product">
                                     </div>
                                     <div class="list-item">
-                                        <img src="<?=ASSETS?>images/" class="responsive" alt="Shop Product">
+                                        <img src="<?=ASSETS?>images/women.jpg" class="responsive" alt="Shop Product">
                                     </div>
                                 </div>
                             </li>
@@ -80,13 +80,13 @@
                                     </div>
 
                                     <div class="list-item">
-                                        <img src="<?=ASSETS?>images/" class="responsive" alt="Shop Product">
+                                        <img src="<?=ASSETS?>images/men.jpg" class="responsive" alt="Shop Product">
                                     </div>
                                     <div class="list-item">
-                                        <img src="<?=ASSETS?>images/" class="responsive" alt="Shop Product">
+                                        <img src="<?=ASSETS?>images/men.jpg" class="responsive" alt="Shop Product">
                                     </div>
                                     <div class="list-item">
-                                        <img src="<?=ASSETS?>images/" class="responsive" alt="Shop Product">
+                                        <img src="<?=ASSETS?>images/men.jpg" class="responsive" alt="Shop Product">
                                     </div>
                                 </div>
                             </li>
@@ -106,19 +106,19 @@
                                     </div>
 
                                     <div class="list-item">
-                                        <img src="<?=ASSETS?>images/" class="responsive" alt="Shop Product">
+                                        <img src="<?=ASSETS?>images/women.jpg" class="responsive" alt="Shop Product">
                                     </div>
                                     <div class="list-item">
-                                        <img src="<?=ASSETS?>images/" class="responsive" alt="Shop Product">
+                                        <img src="<?=ASSETS?>images/women.jpg" class="responsive" alt="Shop Product">
                                     </div>
                                     <div class="list-item">
-                                        <img src="<?=ASSETS?>images/" class="responsive" alt="Shop Product">
+                                        <img src="<?=ASSETS?>images/women.jpg" class="responsive" alt="Shop Product">
                                     </div>
                                 </div>
                             </li>
 
                             <li class="menu-item-has-children">
-                                <a href="#">Brands <i class="fi-xnldxl-chevron"></i></a>
+                                <a href="<?=ROOT?>ShopByBrand">Brands <i class="fi-xnldxl-chevron"></i></a>
                                 <div class="menu-subs menu-mega menu-column-4">
                                     <div class="list-item text-center">
                                         <a href="#">
@@ -148,8 +148,8 @@
                             </li>
 
 
-                            <li><a href="#">Frames Guide</a></li>
-                            <li><a href="#">About Us</a></li>
+                            <li><a href="<?=ROOT?>GuideHomepage">Frames Guide</a></li>
+                            <li><a href="<?=ROOT?>aboutus">About Us</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -178,132 +178,5 @@
 -->
 
     
-<<<<<<< HEAD
-  </head>
-  <body>
-    <div class="container">
-  <nav class="topNav navbar fixed-top navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="<?=ROOT?>homepage"><img src="<?=ASSETS?>images/eyecare-logo.png" alt="EyeCare Optics Logo"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#top_navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="top_navbar">
-
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="<?=ROOT?>homepage">Home</a>
-        </li>
-        <!--Medical Glasses Dropdown  -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Medical Glasses
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <h5 class="dropdown-header">Shop by Gender</h5>
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-
-         <!--Sunlasses Dropdown  -->
-         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Sunglasses
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Shop </a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-         <!--Sports Glasses Dropdown  -->
-         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Sports
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-         <!--Brands Dropdown  -->
-         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Brands
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
 
 
-        <li class="nav-item">
-          <a class="nav-link" href="<?=ROOT?>guideHomepage"  data-toggle="tooltip" title="Know how to pick a frame suitable for your face!">Frame Guide</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="<?=ROOT?>aboutus">About Us</a>
-        </li> 
-      </ul>
-
-      <ul class="navbar-nav ms-auto">
-      <?php if(!isset($_SESSION['userID'])): ?>
-        <li class="nav-item"><a class="nav-link" href="<?=ROOT?>loginRegister"> Login | Signup </a></li>
-      
-        <?php else: ?>
-          <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle disable" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Hello, <?php echo $_SESSION['firstName'];?>
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-            <li>
-              <a class="dropdown-item" href="#"> 
-                <i class="fa fa-user" style="font-size:24px"></i> Go To Profile</a>
-            </li>
-            <li><hr class="dropdown-divider"></li>
-
-            <li>
-              <a class="dropdown-item" href="<?=ROOT?>logout"> Logout</a>
-            </li>
-          </ul>
-        </li>
-
-          
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-              <i class="fa fa-shopping-cart" style="font-size:24px"></i>
-              Cart
-              </a></li>
-        <?php endif; ?>
-
-         
-
-
-
-    	</ul>
-     
-    </div> <!-- End of navbar collapse -->
-  </div> <!-- End of container fluid -->
-</nav>
-</div>
-
-<script>
-$(document).ready(function(){
-  $('[data-toggle="tooltip"]').tooltip();
-});
-</script>
-  </body>
-</html>
-=======
-<script src="<?=ASSETS?>js/header.js" defer></script> 
-
->>>>>>> parent of daaab05 (Updates)
