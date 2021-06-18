@@ -1,0 +1,33 @@
+body{ 
+	margin:0;
+	font: 24px Tahoma,Geneva,sans-serif;
+}
+
+
+.content{
+	text-align:center;
+}
+
+.categories{
+	width:max-content;
+	margin:30px;
+	border:0px solid #184d47;
+	border-radius:10px 10px 10px 10px;
+	display:inline-block;
+}
+
+.categories:hover{
+	box-shadow:0 0 10px 3px #184d47;
+}
+
+.image-item{
+	height:200px;
+	width:250px;
+	font-weight:bold;
+	padding:10px;
+}
+
+
+a{ 
+	text-decoration:none;
+}

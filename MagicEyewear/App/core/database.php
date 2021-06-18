@@ -8,7 +8,7 @@ class Database
 
 			$string = DB_TYPE .":host=".DB_HOST.";dbname=".DB_NAME.";";
 			return $database = new PDO($string,DB_USER,DB_PASS);
-		}catch(PDOExecption $exception){
+		}catch(PDOException $exception){
 
 			die($exception->getMessage());
 		}
@@ -90,6 +90,23 @@ public function write($query, $data=[])
 
   }//End of write()
 
+
+ // Execute the prepared statement
+  public function execute()
+  {
+      return $this->stmt->execute();
+  }
+    // Prepare statement with query
+    public function query($sql)
+    {
+        $this->stmt = $this->dbh->prepare($sql);
+    }
+    // Get result set as array of objects
+    public function resultSet()
+    {
+        $this->execute();
+        return $this->stmt->fetchAll(PDO::FETCH_OBJ);
+    }
 
 } // End of class
 
