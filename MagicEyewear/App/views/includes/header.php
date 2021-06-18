@@ -148,7 +148,7 @@
                             </li>
 
 
-                            <li><a href="#">Frames Guide</a></li>
+                            <li><a href="<?=ROOT?>GuideHomepage">Frames Guide</a></li>
                             <li><a href="<?=ROOT?>aboutus">About Us</a></li>
                         </ul>
                     </nav>

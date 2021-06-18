@@ -5,6 +5,9 @@
         <link rel="stylesheet" href="<?=ASSETS?>css/about-us.css">
     </head>
     <body>
+    <?php  $this->view("includes/header",$data);?>   
+<br><br>
+<br><br>
         <main>
             <div class="fixed-bg bg-1">
               <h1 class="main-text">EyeCare Optics</h1>
