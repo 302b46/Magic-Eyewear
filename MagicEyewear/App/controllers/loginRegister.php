@@ -5,7 +5,7 @@ class LoginRegister extends Controller
     //Shows page
     function index()
     {
-        $data['page_title'] = "LoginRegister";
+        $data['page_title'] = "Login | Signup";
 
         if(isset($_POST['login']))
         {
@@ -17,6 +17,7 @@ class LoginRegister extends Controller
             $user = $this->loadModel("user");
             $user->signup($_POST);
         }
+        
         $this->view("defaultPages/login-register",$data);
 
     }
