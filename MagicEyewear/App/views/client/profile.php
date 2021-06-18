@@ -43,14 +43,14 @@
               <div class="portlet-body">
                 <div>
               <!-- Nav Tabs -->
-              <ul class="nav nav-tabs">
-                <li class="nav-item"><a href="" class="active nav-link">Edit Profile</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Order History</a></li>
+              <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item"><a data-toggle="tab" href="" class="active nav-link">Edit Profile</a></li>
+                <li class="nav-item"><a data-toggle="tab" href="" class="nav-link" >Order History</a></li>
               </ul>
 
               <!-- Tab Panes -->
               <div class="tab-content pt-3">
-                <div role="tabpanel" class="tab-pane active" id="edit">
+                <div class="tab-pane active" id="edit">
                   <form class="form" novalidate="">
                     <div class="row">
                       <div class="col">
@@ -137,7 +137,7 @@
                   </form>
 
                 </div>
-                <div role="tabpanel" class="tab-pane" id="history">Order History</div>
+                <div class="tab-pane" id="history"><h2>Order History</h2></div>
               </div>
             </div>
             </div>
