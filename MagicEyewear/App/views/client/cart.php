@@ -1,22 +1,24 @@
-<!DOCTYPE html>
+<?php $this->view("includes/header",$data);?>   
+
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Cart</title>
+    <title><?=$data['page_title'] . " | " . WEBSITE_TITLE?></title>
     <link rel="stylesheet" href="<?=ASSETS?>css/cart.css">
-
+<!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<link rel="stylesheet" href="https://mdbootstrap.com/previews/ecommerce-demo/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://mdbootstrap.com/previews/ecommerce-demo/css/mdb-pro.min.css">
-<link rel="stylesheet" href="https://mdbootstrap.com/previews/ecommerce-demo/css/mdb.ecommerce.min.css">
-<script defer src="https://friconix.com/cdn/friconix.js"> </script>
+    
+    <link rel="stylesheet" href="https://mdbootstrap.com/previews/ecommerce-demo/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://mdbootstrap.com/previews/ecommerce-demo/css/mdb-pro.min.css">
+    
+    <link rel="stylesheet" href="https://mdbootstrap.com/previews/ecommerce-demo/css/mdb.ecommerce.min.css">
+    <script defer src="https://friconix.com/cdn/friconix.js"> </script>
 
   </head>
   <body class="skin-light">
     <!--Section: Block Content-->
   <section>
 <div class="container">
-
 
     <!--Grid row-->
     <div class="row">
@@ -170,5 +172,7 @@
     </div>
   </section>
   <!--Section: Block Content-->
+  <?php $this->view("includes/Footer",$data);?>   
+
 </body>
 </html>

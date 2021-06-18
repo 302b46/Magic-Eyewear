@@ -1,10 +1,11 @@
-<?php  //$this->view("includes/header",$data);?>
-<!DOCTYPE html>
+<?php $this->view("includes/header",$data);?>
+
 <html lang="en">
 <head>
     <meta charset="utf-8">
     
-    <title>Profile</title>
+    <title><?=$data['page_title'] . " | " . WEBSITE_TITLE?></title>
+
     <link rel="stylesheet" href="<?=ASSETS?>css/clientProfile.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -155,8 +156,7 @@
 <?php //$this->view("includes/Footer",$data);?> 
 
 
-<script type="text/javascript">
- 
-</script>
+<script type="text/javascript"></script>
+<?php $this->view("includes/Footer",$data);?> 
 </body>
 </html>
