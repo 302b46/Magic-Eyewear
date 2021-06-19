@@ -74,7 +74,7 @@
         </li>
          <!--Brands Dropdown  -->
          <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="<?=ROOT?>ShopByBrand" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Brands
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
