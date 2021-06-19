@@ -16,7 +16,7 @@
 </head>
 <body>
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-<div class="container">
+<div class="container" style="margin-top:120px;">
 <div class="row flex-lg-nowrap">
   
 
@@ -111,7 +111,7 @@
                     </div>
                     <div class="row">
                       <div class="col d-flex justify-content-end">
-                        <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#saveModal">Save Changes</button>
+                        <button class="saveChanges" type="button" data-toggle="modal" data-target="#saveModal">Save Changes</button>
                         </div>
                         <!-- Modal -->
                         <div class="modal fade" tabindex="-1" role="dialog" id="saveModal">
@@ -127,8 +127,9 @@
                                   <p>Are you sure you want to save changes?</p>
                                 </div>
                                 <div class="modal-footer">
-                                  <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
-                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  
+                                  <button type="button" class="closeButton" data-dismiss="modal">Close</button>
+                                  <button type="button" class="save" data-dismiss="modal">Save</button>
                                 </div>
                               </div>
                             </div>
