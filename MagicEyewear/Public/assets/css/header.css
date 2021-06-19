@@ -1,29 +1,33 @@
-/* ============ desktop view ============ */
 @media all and (min-width: 992px) {
 	.navbar .nav-item .dropdown-menu{ display: none; }
 	.navbar .nav-item:hover .nav-link{   }
 	.navbar .nav-item:hover .dropdown-menu{ display: block; }
 	.navbar .nav-item .dropdown-menu{ margin-top:0; }
-}	
-/* ============ desktop view .end// ============ */
-
-.topNav{
-    background-color:white;
-    padding-bottom: 10px;
-    
     
 }
-
-.topNav a{
-    color:#13293D;
-    font-size: 16px;
-}
-
-
+.megamenu {
+  position: static;
+  background-color:white;
   
+}
+.navbar-nav a{
+  color:#13293D;
+  font-size: 20px;
+}
+
+.megamenu .dropdown-menu {
+  background: none;
+  border: none;
+  width: 1000px;
+}
+
 
 
 .navbar-nav > li{
-    padding-left:8px;
-    padding-right:8px;
-  }
+  padding-left:8px;
+  padding-right:8px;
+}
+
+.text-uppercase {
+  letter-spacing: 0.18em
+}
