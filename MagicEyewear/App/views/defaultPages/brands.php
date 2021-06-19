@@ -5,7 +5,7 @@
 
 </head>
 <body>
-<?php  $this->view("includes/header-old",$data);?>   
+<?php  $this->view("includes/header",$data);?>   
 <br><br><br><br><br><br>
    <center >
 <h1> shop by brand  </h1> 
@@ -13,7 +13,7 @@
 
 <?php
 /*
-//echo $this->model->ViewAllBrands();
+echo $this->model->ViewAllBrands();
 $str = '';
 $str.='<h5>movie: '.$this->model->ViewAllBrands().'</h5>';
 $str.='<div class="content">';
@@ -22,8 +22,16 @@ $str.='<a href="brandproducts.php?brandname=<?php echo $row[0]["BrandName"]; ?>"
 $str.='<img src="<?php echo $row[0]["BrandImg"]; ?>"  class="image-item"/>';
 $str.='</div>';
 echo $str;
-*/	
+	
+$result = $this->model->ShopBrands();
+foreach($result as $row)
+    {
+    	echo $row['BrandImage'];
+		echo "<br>";
+    }
+*/
 ?>
+ 
 
 
 

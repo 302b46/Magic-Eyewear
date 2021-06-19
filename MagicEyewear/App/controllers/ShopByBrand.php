@@ -10,10 +10,11 @@ class ShopByBrand extends Controller
 
     }
 
-    public function ViewAllBrands()
+    public function ShopBrands()
     {
-		$res = $this->Filters->ViewAllBrands();
-        echo $res;
+		//$res = $this->Filters->ViewAllBrands();
+        $brands = $this->loadModel("Filters");
+ 	 	$brands->ViewAllBrands();
 	}
 }
 

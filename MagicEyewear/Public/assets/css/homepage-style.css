@@ -73,26 +73,26 @@ h3
 
 
 #women{
-    background: url('/Magic-Eyewear/MagicEyewear/Public/assets/Images/women.jpg') ;
+    background: url('<?=ASSETS?>images/women.jpg') ;
     background-repeat: no-repeat;
   background-attachment: local;
   background-size: cover;
     
 }
 #girls{
-    background-image: url("/Magic-Eyewear/MagicEyewear/Public/assets/Images/girls.jpg");
+    background-image: url("<?=ASSETS?>images/girls.jpg");
     background-repeat: no-repeat;
   background-attachment: local;
   background-size: cover;
 }
 #men{
-    background-image: url("/Magic-Eyewear/MagicEyewear/Public/assets/Images/men.jpg");
+    background-image: url("<?=ASSETS?>images/men.jpg");
     background-repeat: no-repeat;
   background-attachment: local;
   background-size: cover;
 }
 #boys{
-    background-image: url("/Magic-Eyewear/MagicEyewear/Public/assets/Images/boys.jpg");
+    background-image: url("<?=ASSETS?>images/boys.jpg");
     background-repeat: no-repeat;
   background-attachment: local;
   background-size: cover;

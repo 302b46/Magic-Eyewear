@@ -20,10 +20,10 @@
           <h4> Shop</h4>
           <ul class="list-unstyled">
             
-            <li><a href="/MagicEyewear/Products/Gallery/Eyeglasses.php">Eyeglasses</a></li>
-            <li><a href="/MagicEyewear/Products/Gallery/Sunglasses.php">Sunglasses</a></li>
-            <li><a href="/MagicEyewear/Products/Gallery/Sports.php">Sports</a></li>
-			<li><a href="/MagicEyewear/Products/Gallery/Brands.php">Shop By Brand</a></li>
+            <li><a href="">Eyeglasses</a></li>
+            <li><a href="">Sunglasses</a></li>
+            <li><a href="">Sports</a></li>
+			<li><a href="">Shop By Brand</a></li>
           </ul>
         </div>
       </div>
@@ -32,9 +32,9 @@
         <div class="footer-pad">
           <h4>Discover</h4>
           <ul class="list-unstyled">
-          <li><a href="/MagicEyewear/Discover/AboutUs.php">About Us</a></li>
-          <li><a href="/MagicEyewear/Discover/AboutUs.php">Contact Us</a></li>
-	      <li><a href="/MagicEyewear/Discover/FramesGuide/Guide.php">Face Shape Guide for Glasses</a></li>
+          <li><a href="<?=ROOT?>aboutus">About Us</a></li>
+          <li><a href="">Contact Us</a></li>
+	      <li><a href="<?=ROOT?>guidehomepage">Face Shape Guide for Glasses</a></li>
 		  <li><a href="#">Virtual Try-On</a></li>
           </ul>
         </div>
