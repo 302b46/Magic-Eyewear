@@ -21,7 +21,15 @@ class User
                 //User is logged in
                 $_SESSION['userID'] = $userData[0]->UserID;
                 $_SESSION['email'] = $userData[0]->Email;
-                header("Location:".ROOT."homepage");
+                if($userData[0]->UserType ==1)
+                {
+                    header("Location:".ROOT."Admin");
+
+                }
+                else{
+                    header("Location:".ROOT."homepage");
+
+                }
             }//End of is_array
             else
             {
