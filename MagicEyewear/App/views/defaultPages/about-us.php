@@ -1,13 +1,33 @@
+<?php  $this->view("includes/header",$data);?>   
+
 <html>
     <head>
       <title><?=$data['page_title'] . " | " . WEBSITE_TITLE?></title>
 
         <link rel="stylesheet" href="<?=ASSETS?>css/about-us.css">
+        <link rel="stylesheet" href="<?=ASSETS?>css/guide.css">
+
     </head>
     <body>
-    <?php  $this->view("includes/header",$data);?>   
-<br><br>
-<br><br>
+<div class="scrolls">
+  <div class="up"><span>↑</span>
+    <div class="center"><span>mouse <br> scrolling</span></div>
+  </div>
+  <div class="down"><span>↓</span></div>
+</div>
+<div class="smooth">
+  <div class="header">
+    <ul>
+      <li><a href="#who">Who Are We</a></li>
+      <li><a href="#mission">Our Mission</a></li>
+      <li><a href="#vision">Our Vision</a></li>
+      <li><a href="#where">Where To Find Us</a></li>
+
+
+
+ 
+    </ul>
+  </div>
         <main>
             <div class="fixed-bg bg-1">
               <h1 class="main-text">EyeCare Optics</h1>

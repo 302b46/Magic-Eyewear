@@ -14,24 +14,18 @@ class User
             $userInputArray['email'] = $POST['email'];
             $userInputArray['password'] = md5($POST['password']);
             $loginQuery = "SELECT * FROM user WHERE Email=:email && Password=:password LIMIT 1";
-            $userData = $database->read($loginQuery, $userInputArray);
+            $userData = $database->read($loginQuery,$userInputArray);
             
-            //User is logged in
+            if(is_array($userData))
+            {
+                //User is logged in
                 $_SESSION['userID'] = $userData[0]->UserID;
                 $_SESSION['email'] = $userData[0]->Email;
-                if($userData[0]->UserType ==1)
-                {
-                    header("Location:".ROOT."Admin");
-
-                }
-                else{
-                    header("Location:".ROOT."homepage");
-
-                }
+                header("Location:".ROOT."homepage");
             }//End of is_array
             else
             {
-                $_SESSION['errorMessage'] = "Wrong email or password.";
+                echo $_SESSION['errorMessage'] = "Wrong email or password.";
 
             }
         }//End of isset

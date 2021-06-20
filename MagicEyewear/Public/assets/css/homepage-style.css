@@ -73,26 +73,26 @@ h3
 
 
 #women{
-    background: url('<?=ASSETS?>images/women.jpg') ;
+    background: url('<?=ASSETS?>Images/women.jpg') ;
     background-repeat: no-repeat;
   background-attachment: local;
   background-size: cover;
     
 }
 #girls{
-    background-image: url("<?=ASSETS?>images/girls.jpg");
+    background-image: url("<?=ASSETS?>Images/girls.jpg");
     background-repeat: no-repeat;
   background-attachment: local;
   background-size: cover;
 }
 #men{
-    background-image: url("<?=ASSETS?>images/men.jpg");
+    background-image: url("<?=ASSETS?>Images/men.jpg");
     background-repeat: no-repeat;
   background-attachment: local;
   background-size: cover;
 }
 #boys{
-    background-image: url("<?=ASSETS?>images/boys.jpg");
+    background-image: url("<?=ASSETS?>Images/boys.jpg");
     background-repeat: no-repeat;
   background-attachment: local;
   background-size: cover;
