@@ -3,7 +3,7 @@
 <!doctype html>
 <html>
     <head>
-        <title>Camera Project</title>
+    <title><?=$data['page_title'] . " | " . WEBSITE_TITLE?></title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="<?=ASSETS?>css/tryon.css">
     </head>
@@ -294,9 +294,9 @@
 
                 var object = {
                     outside: {
-                        left: '<?=ASSETS?>Images/glasses/left.png',
-                        right: '<?=ASSETS?>Images/glasses/right.png',
-                        front: '<?=ASSETS?>Images/glasses/front.png'
+                        left: 'glasses/left.png',
+                        right: 'glasses/right.png',
+                        front: 'glasses/front.png'
                     }
                 };
 
@@ -329,7 +329,6 @@
                 });
             });
         </script>
-        <?php  $this->view("includes/footer",$data);?>   
 
     </body>
 </html>
