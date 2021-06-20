@@ -22,10 +22,7 @@
       <li><a href="#mission">Our Mission</a></li>
       <li><a href="#vision">Our Vision</a></li>
       <li><a href="#where">Where To Find Us</a></li>
-
-
-
- 
+      
     </ul>
   </div>
         <main>

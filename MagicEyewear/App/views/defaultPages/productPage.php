@@ -1,5 +1,5 @@
 <?php $this->view("includes/header",$data);?>   
-
+<br><br>
 <html>
   <head>
 
@@ -48,7 +48,7 @@
 
     </div>
 
-    <div class="col-12" style="margin-top:-500px;">
+    <div class="col-12" style="margin-top:-500px; margin-left:30px;">
           <div class="row">
             <div class="col-3">
               <div class="view overlay rounded z-depth-1 gallery-item">
@@ -60,7 +60,15 @@
             </div>
             <div class="col-3">
               <div class="view overlay rounded z-depth-1 gallery-item">
-              <button><img src='<?=ASSETS?>Images/DIVA sunglasses/4162 40 C97AS F.jpg'
+              <button><img src='<?=ASSETS?>Images/DIVA sunglasses/4162 40 C97AS A.jpg'
+                  class="img-fluid"></button>
+                <div class="mask rgba-white-slight"></div>
+              </div>
+            </div>
+
+            <div class="col-3">
+              <div class="view overlay rounded z-depth-1 gallery-item">
+              <button><img src='<?=ASSETS?>Images/DIVA sunglasses/4162 40 C97AS A.jpg'
                   class="img-fluid"></button>
                 <div class="mask rgba-white-slight"></div>
               </div>

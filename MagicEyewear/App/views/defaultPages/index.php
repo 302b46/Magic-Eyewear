@@ -18,7 +18,7 @@
     <body>
 
 <?php  $this->view("includes/header",$data);?>   
-
+<br><br><br>
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" >
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -26,9 +26,9 @@
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
   </ol>
   <!-- first slide -->
-  <div class="carousel-inner">
+  <div class="carousel-inner" style="max-height: 100vh;">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="<?=ASSETS?>Images/DIVA rosa.jpg" alt="First slide">
+      <img class="d-block w-100" src="<?=ASSETS?>Images/DIVA.jpg"  alt="First slide">
 	  <div class="carousel-caption d-none d-md-block">
     <h3>We Sell Solutions Not Products</h3>
   </div>
@@ -43,7 +43,7 @@
     </div>
  <!-- third slide -->
     <div class="carousel-item">
-      <img class="d-block w-100" src="<?=ASSETS?>Images/faceshapes.jpg" alt="Third slide">
+      <img class="d-block w-100" src="<?=ASSETS?>Images/faceshapes2.jpg" alt="Third slide">
 	  <div class="carousel-caption d-none d-md-block">
 	  <h3>Discover the Best Eyewear for Your Face Shape</h3>
   </div>
