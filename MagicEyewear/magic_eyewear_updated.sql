@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 16, 2021 at 01:49 AM
+-- Generation Time: Jun 19, 2021 at 10:57 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.3
 
@@ -94,10 +94,18 @@ CREATE TABLE `frame` (
   `FrameMaterial` int(11) NOT NULL,
   `AssignedGender` int(11) NOT NULL,
   `FrameSize` int(11) NOT NULL,
-  `FrameImage` blob NOT NULL,
+  `FrameImage` varchar(250) NOT NULL,
   `FrameShape` int(11) NOT NULL,
   `FramePrice` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `frame`
+--
+
+INSERT INTO `frame` (`FrameID`, `FrameCode`, `FrameType`, `FrameBrand`, `FrameDescription`, `FrameColor`, `FrameRim`, `FrameMaterial`, `AssignedGender`, `FrameSize`, `FrameImage`, `FrameShape`, `FramePrice`) VALUES
+(3, '21111134', 1, 4, 'ayhaga', 3, 2, 2, 2, 20, 'blue.jpg', 1, 200),
+(4, '21111134', 1, 4, 'aaaaaaa', 3, 2, 2, 2, 20, 'blue.jpg', 1, 500);
 
 -- --------------------------------------------------------
 
@@ -361,7 +369,7 @@ ALTER TABLE `color`
 -- AUTO_INCREMENT for table `frame`
 --
 ALTER TABLE `frame`
-  MODIFY `FrameID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `FrameID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `frameshape`

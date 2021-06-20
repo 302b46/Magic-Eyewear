@@ -16,9 +16,7 @@ class User
             $loginQuery = "SELECT * FROM user WHERE Email=:email && Password=:password LIMIT 1";
             $userData = $database->read($loginQuery, $userInputArray);
             
-            if(is_array($userData))
-            {
-                //User is logged in
+            //User is logged in
                 $_SESSION['userID'] = $userData[0]->UserID;
                 $_SESSION['email'] = $userData[0]->Email;
                 if($userData[0]->UserType ==1)

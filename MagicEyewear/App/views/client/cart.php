@@ -10,10 +10,10 @@
     <script defer src="https://friconix.com/cdn/friconix.js"> </script>
 
   </head>
-  <body class="template-product js-theme-loaded" data-anim-fade="false" data-anim-load="true" data-anim-interval-style="fade_down" data-anim-zoom="false" data-anim-interval="true" style="height: 100%;" data-new-gr-c-s-check-loaded="14.1015.0" data-gr-ext-installed="">
+  <body class="skin-light">
     <!--Section: Block Content-->
   <section class="cart"> 
-<div class="container">
+<div class="container" >
 
     <!--Grid row-->
     <div class="row">
@@ -72,7 +72,7 @@
               <div class="col-md-5 col-lg-3 col-xl-3">
                 <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
                   <img class="img-fluid w-100"
-                    src='<?=ASSETS?>Images/DIVA sunglasses/4165 40 C289 A.jpg' alt="Sample">
+                    src='<?=ASSETS?>Images/DIVA sunglasses/4165 40 C289 A.jpg' alt="product">
                   
                 </div>
               </div>

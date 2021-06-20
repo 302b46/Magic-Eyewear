@@ -11,6 +11,30 @@
 <h1> shop by brand  </h1> 
 </center>
 
+<?php
+/*
+echo $this->model->ViewAllBrands();
+$str = '';
+$str.='<h5>movie: '.$this->model->ViewAllBrands().'</h5>';
+$str.='<div class="content">';
+$str.='<div class="categories">';
+$str.='<a href="brandproducts.php?brandname=<?php echo $row[0]["BrandName"]; ?>"  class="image-title">';
+$str.='<img src="<?php echo $row[0]["BrandImg"]; ?>"  class="image-item"/>';
+$str.='</div>';
+echo $str;
+	
+$result = $this->model->ShopBrands();
+foreach($result as $row)
+    {
+    	echo $row['BrandImage'];
+		echo "<br>";
+    }
+*/
+?>
+ 
+
+
+
 <div class="content">
 			<div class="categories">
 				<a href="#Ray-Ban.png" target="_blank" class="image-title">

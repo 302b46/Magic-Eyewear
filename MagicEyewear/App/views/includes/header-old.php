@@ -18,7 +18,7 @@
                 <div class="header-item-left">
                     <!-- <h1><a href="#" class="brand">Store</a></h1> --> <!-- LOGO 3LA LEFT -->
                     <ul> 
-                        <a href="<?=ROOT?>homepage"><img src="<?=ASSETS?>images/eyecare-logo.png" style="margin:auto; " alt="logo" /></a>
+                        <a href="<?=ROOT?>homepage"><img class="headerImages"  src="<?=ASSETS?>images/eyecare-logo.png" style="margin:auto; " alt="logo"  /></a>
                     </ul>
                 </div>
                 <!-- Section: Navbar Menu -->
@@ -32,7 +32,7 @@
                         </div>
                         <!-- LOGO FO2 AL MENU 
                         <ul> 
-                        <a href="#"><img src="asset/eyecare-logo.png" style="margin:auto; " alt="logo" /></a>
+                        <a href="#"><img class="headerImages" src="asset/eyecare-logo.png" style="margin:auto; " alt="logo" /></a>
                         <br>
                         </ul>
                         -->
@@ -54,13 +54,13 @@
                                     </div>
                                     
                                     <div class="list-item">
-                                        <img src="<?=ASSETS?>images/women.jpg" class="responsive" alt="Shop Product">
+                                        <img class="headerImages" src="<?=ASSETS?>images/women.jpg" class="responsive" alt="Shop Product">
                                     </div>
                                     <div class="list-item">
-                                        <img src="<?=ASSETS?>images/women.jpg" class="responsive" alt="Shop Product">
+                                        <img class="headerImages" src="<?=ASSETS?>images/women.jpg" class="responsive" alt="Shop Product">
                                     </div>
                                     <div class="list-item">
-                                        <img src="<?=ASSETS?>images/women.jpg" class="responsive" alt="Shop Product">
+                                        <img class="headerImages" src="<?=ASSETS?>images/women.jpg" class="responsive" alt="Shop Product">
                                     </div>
                                 </div>
                             </li>
@@ -80,13 +80,13 @@
                                     </div>
 
                                     <div class="list-item">
-                                        <img src="<?=ASSETS?>images/men.jpg" class="responsive" alt="Shop Product">
+                                        <img class="headerImages" src="<?=ASSETS?>images/men.jpg" class="responsive" alt="Shop Product">
                                     </div>
                                     <div class="list-item">
-                                        <img src="<?=ASSETS?>images/men.jpg" class="responsive" alt="Shop Product">
+                                        <img class="headerImages" src="<?=ASSETS?>images/men.jpg" class="responsive" alt="Shop Product">
                                     </div>
                                     <div class="list-item">
-                                        <img src="<?=ASSETS?>images/men.jpg" class="responsive" alt="Shop Product">
+                                        <img class="headerImages" src="<?=ASSETS?>images/men.jpg" class="responsive" alt="Shop Product">
                                     </div>
                                 </div>
                             </li>
@@ -106,13 +106,13 @@
                                     </div>
 
                                     <div class="list-item">
-                                        <img src="<?=ASSETS?>images/women.jpg" class="responsive" alt="Shop Product">
+                                        <img class="headerImages" src="<?=ASSETS?>images/women.jpg" class="responsive" alt="Shop Product">
                                     </div>
                                     <div class="list-item">
-                                        <img src="<?=ASSETS?>images/women.jpg" class="responsive" alt="Shop Product">
+                                        <img class="headerImages" src="<?=ASSETS?>images/women.jpg" class="responsive" alt="Shop Product">
                                     </div>
                                     <div class="list-item">
-                                        <img src="<?=ASSETS?>images/women.jpg" class="responsive" alt="Shop Product">
+                                        <img class="headerImages" src="<?=ASSETS?>images/women.jpg" class="responsive" alt="Shop Product">
                                     </div>
                                 </div>
                             </li>
@@ -122,25 +122,25 @@
                                 <div class="menu-subs menu-mega menu-column-4">
                                     <div class="list-item text-center">
                                         <a href="#">
-                                            <img src="<?=ASSETS?>images/Ray-Ban.png" class="responsive" alt="brandimg">
+                                            <img class="headerImages" src="<?=ASSETS?>images/Ray-Ban.png" class="responsive" alt="brandimg class="headerImages"">
                                             <h4 class="title">Brand Name 1</h4>
                                         </a>
                                     </div>
                                     <div class="list-item text-center">
                                         <a href="#">
-                                            <img src="<?=ASSETS?>images/Ray-Ban.png" class="responsive" alt="brandimg">
+                                            <img class="headerImages" src="<?=ASSETS?>images/Ray-Ban.png" class="responsive" alt="brandimg class="headerImages"">
                                             <h4 class="title">Brand Name 2</h4>
                                         </a>
                                     </div>
                                     <div class="list-item text-center">
                                         <a href="#">
-                                            <img src="<?=ASSETS?>images/Ray-Ban.png" class="responsive" alt="brandimg">
+                                            <img class="headerImages" src="<?=ASSETS?>images/Ray-Ban.png" class="responsive" alt="brandimg class="headerImages"">
                                             <h4 class="title">Brand Name 3</h4>
                                         </a>
                                     </div>
                                     <div class="list-item text-center">
                                         <a href="#">
-                                            <img src="<?=ASSETS?>images/Ray-Ban.png" class="responsive" alt="New Product">
+                                            <img class="headerImages" src="<?=ASSETS?>images/Ray-Ban.png" class="responsive" alt="New Product">
                                             <h4 class="title">Brand Name 4</h4>
                                         </a>
                                     </div>
@@ -168,14 +168,6 @@
             </div>
         </div>
     </header>
-
-    <!-- Section: Main 
-    <main class="main">
-        <div class="container">
-
-        </div>
-    </main>
--->
 
     
 

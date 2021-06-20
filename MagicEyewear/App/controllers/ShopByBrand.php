@@ -9,6 +9,13 @@ class ShopByBrand extends Controller
         $this->view("defaultPages/brands",$data);
 
     }
+
+    public function ShopBrands()
+    {
+		//$res = $this->Filters->ViewAllBrands();
+        $brands = $this->loadModel("Filters");
+ 	 	$brands->ViewAllBrands();
+	}
 }
 
 ?>
