@@ -28,10 +28,10 @@
                                         <div class="col-lg-6 mb-4">
                                             <h6 class=" text-uppercase">Shop By Gender</h6>
                                             <ul class="list-unstyled">
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0">Women</a></li>
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Men</a></li>
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Girls</a></li>
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Boys</a></li>
+                                                <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0">Women</a></li>
+                                                <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">Men</a></li>
+                                                <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">Girls</a></li>
+                                                <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">Boys</a></li>
                                             </ul>
                                         </div>
                                         <div class="col-lg-6 mb-4">

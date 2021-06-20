@@ -17,7 +17,7 @@
     </head>
     <body>
 
-<?php  $this->view("includes/header-old",$data);?>   
+<?php  $this->view("includes/header",$data);?>   
 
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" >
   <ol class="carousel-indicators">
@@ -84,12 +84,10 @@
         <button class="btn-change" id="men" style=" width:50%; height:250px">SHOP MEN</button>
         <button class="btn-change" id="boys" style="width:50%; height:250px">SHOP BOYS</button>
     </div>
-    <hr>
+    
 </div>
 
-<div class="middlepage2">
-    <h1>ADS</h1>
-</div>
+
 
 <?php $this->view("includes/footer",$data);?>   
 
