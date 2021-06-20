@@ -36,11 +36,11 @@ img {
 }
 .main-text {
   font-size: 5.5em;
-  line-height:0px;
+  line-height:50%;
 }
 .sub-text{
   color:#fff;
-  line-height:0px;
+  line-height:150px;
   text-shadow: 1px 1px 10px #000, 5px 5px 20px #000, 1px 0px 20px #def;
 }
 .text-box {
@@ -59,32 +59,34 @@ img {
   text-align: left;
 }
 
-.bg-1 {
-    background-image: url("https://images.unsplash.com/photo-1501621667575-af81f1f0bacc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+.bg-1, .bg-2, .bg-3{
+    /* background-image: url("https://images.unsplash.com/photo-1501621667575-af81f1f0bacc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"); */
+    background-image: url("https://cdn.pixabay.com/photo/2019/10/17/13/39/network-4556932__480.jpg");
 }
 
-.bg-1-1 {
-    background-image: url("https://images.pexels.com/photos/6651372/pexels-photo-6651372.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+.bg-1-1, .bg-2-1, .bg-3-1, .bg-4-1  {
+    background-image: url("https://images.pexels.com/photos/5766609/pexels-photo-5766609.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    object-fit:cover;
 }
-.bg-2 {
+/* .bg-2 {
   background-image: url("https://images.pexels.com/photos/5752328/pexels-photo-5752328.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
-}
-.bg-2-1 {
+} */
+/* .bg-2-1 {
     background-image: url("https://images.pexels.com/photos/6651371/pexels-photo-6651371.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
-}
-.bg-3 {
+} */
+/* .bg-3 {
   background-image: url("https://images.pexels.com/photos/6651370/pexels-photo-6651370.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
 
-}
-.bg-3-1 {
+} */
+/* .bg-3-1 {
   background-image: url("https://images.unsplash.com/photo-1602817195903-af34694abfb0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fGJpbm9jdWxhcnN8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");
 
-}
+} */
 .bg-4 {
   background-image: url("https://images.pexels.com/photos/1037916/pexels-photo-1037916.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
 }
-.bg-4-1{
+/* .bg-4-1{
     background-image: url("https://images.unsplash.com/photo-1615468822882-4828d2602857?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Z2xhc3NlcyUyMHNob3B8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");
 
-}
+} */
 

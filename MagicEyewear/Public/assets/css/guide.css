@@ -101,17 +101,23 @@ section {
  
   /* box-shadow: 0 3px 3px -1px rgba(30, 31, 32, 0.5); */
   background-size: cover;
-  object-fit: cover;
 
 
   /* scroll-snap-align: center; */
 }
 
+.features{
+  font-size: 20px;
+}
+
 .section-content{
     font-size: 1rem;
     color: #CFE8EF;
-    background: -webkit-linear-gradient(to right, #005AA7,#353D59);
-    background: linear-gradient(to right, #353D59, #005AA7);
+
+    /* background: -webkit-linear-gradient(to right, #005AA7,#353D59);
+    background: linear-gradient(to right, #353D59, #005AA7); */
+    /* background-image: url("https://cdn.pixabay.com/photo/2018/02/11/22/22/paper-3146953__480.jpg"); */
+
 }
 
 
@@ -120,16 +126,16 @@ section h2 {
   text-transform: uppercase;
   font-size: 2.25rem;
   font-weight: 900;
-  padding: 0.9em 1em;
+  padding: 2em 4em;
   color: white;
-  background-color: rgba(19, 41, 61, 0.6);
+  background-color: rgba(109, 126, 136, 0.4);
   /* mix-blend-mode: screen; */
-  border-radius: 0.25em;
+  border-radius: 0.4em;
   pointer-events: none;
   user-select: none;
 }
 
-section p{
+.section-details{
     padding-top:20px;
     padding-left:20px;
     font-size: 20px;
@@ -139,17 +145,17 @@ section p{
     margin: 0;
 }
 
+.start{
+  background-image: url("https://www.psychologicalscience.org/redesign/wp-content/uploads/2014/12/many-faces-1024x705.jpg");
 
-#home{
+}
+.shapes{
     background-image: url("https://www.clearly.ca/thelook/wp-content/uploads/2013/11/face-shape-guide-main-faces-glasses.jpg");
  
 }
 
 #face{
     background-image: url("https://i.ibb.co/4JHrDkH/facialrecognition-1-cropped1.png");
-    /* background-image:url("https://1gew6o3qn6vx9kp3s42ge0y1-wpengine.netdna-ssl.com/wp-content/uploads/prod/sites/5/2018/12/facial_recognition_action.jpg"); */
 }
 
-#heart{
-    background-image: url("https://images.unsplash.com/photo-1543984613-f55ca6a1ba35?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJyb3dsaW5lJTIwZ2xhc3Nlc3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");
-}
+

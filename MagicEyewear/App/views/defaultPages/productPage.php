@@ -98,7 +98,7 @@
 <hr>
 
 
-<button type="button" class="tryOn"><i class="fi-xnluxl-robot-rounded"></i> Try-On</button>
+<button type="button" id="tryon" onclick='' class="tryOn"><i class="fi-xnluxl-robot-rounded"></i> Try-On</button>
 <button type="button" class="addToCart"><i class="fi-xwsuhl-shopping-cart-solid"></i> Add to cart</button>
 </div>
 </div>
@@ -107,6 +107,11 @@
 </section>
 <!--Section: Block Content-->
 <!-- Scripts & JQuery -->
+<script type="text/javascript">
+    document.getElementById("tryon").onclick = function () {
+        location.href = "<?=ROOT?>tryon";
+    };
+</script>
 <script type="text/javascript" src="https://mdbootstrap.com/previews/ecommerce-demo/js/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="https://mdbootstrap.com/previews/ecommerce-demo/js/popper.min.js"></script>
 <script type="text/javascript" src="https://mdbootstrap.com/previews/ecommerce-demo/js/bootstrap.js"></script>

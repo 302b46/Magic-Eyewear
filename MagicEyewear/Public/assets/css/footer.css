@@ -5,7 +5,9 @@ footer {
     background: -webkit-linear-gradient(59deg, #13293d, #6d7e88);
     background: linear-gradient(59deg, #13293d, #6d7e88);
     color: white;
-    margin-top:100px;
+    width:100%;
+    left: 0;
+    bottom: 0;
   }
   
   footer a {

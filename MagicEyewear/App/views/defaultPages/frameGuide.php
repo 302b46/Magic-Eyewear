@@ -31,15 +31,17 @@
  
     </ul>
   </div>
-  <section id="home">
+  <section class="start" id="home">
     <h2>The Ultimate Face Guide</h2>
   </section>
   <section class="section-content">
-    <p>
-    Two factors to take into consideration when shopping for frames are face shape and frame shape.
-     We believe you should wear whatever makes you feel comfortable, but for those of you who can’t figure
-     out why some pairs of glasses look better than others, we want to provide some insight on this face shape and frame shape dynamic.
-    </p>
+    <div class="section-details">
+      <p>
+      Two factors to take into consideration when shopping for frames are face shape and frame shape.
+      We believe you should wear whatever makes you feel comfortable, but for those of you who can’t figure
+      out why some pairs of glasses look better than others, we want to provide some insight on this face shape and frame shape dynamic.
+      </p>
+  </div>
   </section>
 
   <section id="face">
@@ -47,93 +49,104 @@
   </section>
 
   <section class="section-content">
-      <p>The first step towards finding the perfect pair of glasses is to find your face shape. Because every face is unique in the angles and lines that make up the face, try to pick the shape that most strongly resembles your face. The four most common face shapes are square, oval, heart, and round face shapes.</p>
+    <div class="section-details">
+    <p>The first step towards finding the perfect pair of glasses is to find your face shape. Because every face is unique in the angles and lines that make up the face, try to pick the shape that most strongly resembles your face. The four most common face shapes are square, oval, heart, and round face shapes.</p>
+
+    </div>
   </section>
 
-  <section id="heart">
+  <section class="shapes" id="heart">
     <h2>The Heart-Shaped Face</h2>
   </section>
   <section class="section-content">
-    <h3>So Your Face Is Heart-Shaped, Now What?</h3>
-    <h5>Face Key Characteristics:</h5>
-    <ul>
-      <li>Broad forehead</li>
-      <li>High and defined cheekbones</li>
-      <li>Small chin</li>
-    </ul>
+    <div class="section-details">
+ 
+    <h3>Your Face Is Heart-Shaped If You Have:</h3>
+    <ol>
+      <li class="features">A Broad forehead</li>
+      <li class="features">High and defined cheekbones</li>
+      <li class="features">A Small chin</li>
+    </ol>
 
-    <h5>Recommended Frame Shape:</h5>
-    <h3>The Cat-Eye</h3>
+    <h3>Recommended Frame Shape:</h3>
+    <h5>The Cat-Eye</h5>
+    </div>
+    
   </section>
 
   
 
 
-  <section id="oval">
+  <section class="shapes" id="oval">
     <h2>The Oval Face</h2>
   </section>
 
   <section class="section-content">
-  <h3>So Your Face Is Oval, Now What?</h3>
-    <h5>Face Key Characteristics:</h5>
-    <ul>
-      <li>Softly rounded</li>
-      <li>Evenly proportioned/li>
+  <div class="section-details">
+
+  <h3>Your Face Is Oval If You Have:</h3>
+    <ol>
+      <li class="features">Softly rounded</li>
+      <li class="features">Evenly proportioned</li>
     </ul>
 
-    <h5>Recommended Frame Shape:</h5>
-    <h3>Geometric shapes (square or rectangular)</h3>
+    <h3>Recommended Frame Shape:</h3>
+    <h5>Geometric shapes (square or rectangular)</h5>
+</div>
   </section>
 
-  <section id="round">
+  <section class="shapes" id="round">
     <h2>The Round Face</h2>
   </section>
 
   <section class="section-content">
-  <h3>So Your Face Is Round, Now What?</h3>
-    <h5>Face Key Characteristics:</h5>
-    <ul>
-      <li>Width & length similarly proportionate</li>
-      <li>Fuller cheekbones</li>
-      <li>Little to no angles</li>
-    </ul>
+    <div class="section-details">
+  <h3>Your Face Is Round If You Have:</h3>
 
-    <h5>Recommended Frame Shape:</h5>
-    <h3>Rectangular</h3>
-    
+    <ol>
+      <li class="features">Width & length similarly proportionate</li>
+      <li class="features">Fuller cheekbones</li>
+      <li class="features">Little to no angles</li>
+    </ol>
+
+    <h3>Recommended Frame Shape:</h3>
+    <h5>Rectangular</h5>
+</div>
   </section>
 
-  <section id="square">
+  <section class="shapes" id="square">
     <h2>The Square Face</h2>
   </section>
 
   <section class="section-content">
-  <h3>So Your Face Is Square, Now What?</h3>
-    <h5>Face Key Characteristics:</h5>
-    <ul>
-      <li>Broad deep forehead</li>
-      <li>Square chin</li>
-      <li>Wide jaw</li>
-    </ul>
+  <div class="section-details">
+  <h3>Your Face Is Oval If You Have:</h3>
+    <ol>
+      <li class="features">Broad deep forehead</li>
+      <li class="features">Square chin</li>
+      <li class="features">Wide jaw</li>
+    </ol>
 
-    <h5>Recommended Frame Shape:</h5>
-    <h3>Round or oval</h3>
+    <h3>Recommended Frame Shape:</h3>
+    <h5>Round or oval</h5>
+</div>
   </section>
 
-  <section id="triangular">
+  <section class="shapes" id="triangular">
     <h2>The Triangular Face</h2>
   </section>
 
   <section class="section-content">
-  <h3>So Your Face Is Triangular, Now What?</h3>
-    <h5>Face Key Characteristics:</h5>
-    <ul>
-      <li>Narrow at the forehead</li>
-      <li>Wider at the cheek and chin area</li>
-    </ul>
+  <div class="section-details">
+  <h3>Your Face Is Oval If You Have:</h3>
+    <ol>
+      <li class="features">A Narrow at the forehead</li>
+      <li class="features">Wider at the cheek and chin area</li>
+    </ol>
 
-    <h5>Recommended Frame Shape:</h5>
-    <h3>Aviators or Cat-Eye</h3>
+    <h3>Recommended Frame Shape:</h3>
+    <h5>Aviators or Cat-Eye</h5>
+</div>
   </section>
  
 </div>
@@ -142,6 +155,7 @@
 
 
 
+<?php  $this->view("includes/footer",$data);?>  
 
 
 
