@@ -1,0 +1,127 @@
+.sidebar-menu{
+    text-align: center; 
+    line-height:3; 
+    font-size: larger; 
+}
+
+.emp{
+    color:#13293d;
+    font-size:20px;
+}
+
+
+
+.linkbtn{
+    color:#7e7e7e;
+    background-color:#0b132b ;
+    text-decoration: none;
+   
+    
+}
+
+.linkbtn:hover {
+    font-size:120%;
+    color: #19a0f6;
+  }
+  
+
+/* Tables Styling */
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    width: 100%;
+    box-shadow: 2px 2px 3px grey;
+}
+
+.styled-table thead tr {
+    background-color: #19a0f6;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+/* Buttons in tables */
+
+    .button {
+    border: none;
+    color: white;
+    padding: 8px 50px;
+    font-size: 16px;
+    display:inline-block;
+    transition-duration: 0.4s;
+  }
+
+  .button1 {
+    background-color: white; 
+    color: #0b132b; 
+    border: 2px solid #1c2d5e;
+  }
+
+  .button1:hover {
+    background-color: #1c2d5e;
+    color: white;
+  }
+
+  .delete {
+    background-color: white; 
+    color: #0b132b; 
+    border: 2px solid #f44336;
+  }
+
+  .delete:hover {
+    background-color: #f44336;
+    color: white;
+  }
+
+  .edit {
+    background-color: white; 
+    color: #0b132b; 
+    border: 2px solid #1c2d5e;
+    margin-right:695px;
+  }
+
+  .edit:hover {
+    background-color: #1c2d5e;
+    color: white;
+  }
+
+  .save {
+    background-color: white; 
+    color: #0b132b; 
+    border: 2px solid #1c2d5e;
+    margin-right:695px;
+  }
+
+  .save:hover {
+    background-color: #1c2d5e;
+    color: white;
+  }
+
+  /* Modal */
+
+  
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* form labels */
+
+.editadmin{
+  color:#1b98e0;
+}
+
