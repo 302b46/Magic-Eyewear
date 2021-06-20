@@ -188,19 +188,24 @@
                             <div class="col-lg-7 col-xl-8">
                                 <div class="p-4">
                                     <div class="row">
+
+
+                                    <div class="col-lg-6 mb-4">
+                                            <ul class="list-unstyled">
+                                            <li class="nav-item" ><a href="<?=ROOT?>ShopByBrand" class="nav-link"><img class="brands"src="<?=ASSETS?>images/armani.png"></a></li>
+                                            
+                                            <li class="nav-item"><a href="<?=ROOT?>ShopByBrand" class="nav-link"><img class="brands"src="<?=ASSETS?>images/armani.png"></a></li>
+                                            </ul>
+                                        </div>
                                         <div class="col-lg-6 mb-4">
                                             <ul class="list-unstyled">
-                                                <li class="nav-item"><a href="" class="nav-link"><img class="brands"src="<?=ASSETS?>images/armani.png"></a></li>
-                                                <li class="nav-item"><a href="" class="nav-link"><img class="brands"src="<?=ASSETS?>images/Polaroid.png"></a></li>
+                                            <li class="nav-item"><a href="<?=ROOT?>ShopByBrand" class="nav-link"><img class="brands"src="<?=ASSETS?>images/armani.png"></a></li>
+                                            
+                                            <li class="nav-item"><a href="<?=ROOT?>ShopByBrand" class="nav-link"><img class="brands"src="<?=ASSETS?>images/armani.png"></a></li>
                                             </ul>
                                         </div>
-                                        <div class="col-lg-6 ml-4">
-                                            <h6 class=" text-uppercase">Top Brands</h6>
-                                            <ul class="list-unstyled">
-                                                <li class="nav-item"><a href="" class="nav-link"><img class="brands"src="<?=ASSETS?>images/Ralph-Lauren.png"></a></li>
-                                                <li class="nav-item"><a href="" class="nav-link"><img class="brands"src="<?=ASSETS?>images/tommyhilfiger.jpg"></a></li>
-                                            </ul>
-                                        </div>
+
+                                        
                                        
 
                                         
