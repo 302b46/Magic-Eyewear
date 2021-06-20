@@ -1,3 +1,4 @@
+<?php   $this->view("includes/header",$data);?> 
 <?php 
  $host = "localhost";  
  $db_user = "root";  
@@ -18,15 +19,16 @@
 
     <title></title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+    
     <link href="<?=ASSETS?>css/ProductListing.css" rel="stylesheet">
 
 </head>
 
 <body>
-<?php //  $this->view("includes/header",$data);?>   
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+  
     <!-- Page Content -->
     <div class="container">
         <br>
@@ -156,16 +158,11 @@ var x = document.getElementById("filtersbar");
 
     </div>
 
-   <!-- <script src="js/jquery-1.11.1.min.js"></script> -->>
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <!--<script src="js/bootstrap.min.js"></script>-->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <!--<script src="js/jquery-ui.js"></script>-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
     <script src="<?=ASSETS?>js/filtering.js">
         
     </script>
+<?php   $this->view("includes/footer",$data);?> 
 
 </body>
 
