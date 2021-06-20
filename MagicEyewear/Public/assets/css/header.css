@@ -5,6 +5,10 @@
     
 }
 
+.brands{
+  width:250px;
+  height:200px;
+}
 .megamenu {
   position: static;
   background-color:white;

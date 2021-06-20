@@ -189,26 +189,19 @@
                                 <div class="p-4">
                                     <div class="row">
                                         <div class="col-lg-6 mb-4">
+                                            <ul class="list-unstyled">
+                                                <li class="nav-item"><a href="" class="nav-link"><img class="brands"src="<?=ASSETS?>images/armani.png"></a></li>
+                                                <li class="nav-item"><a href="" class="nav-link"><img class="brands"src="<?=ASSETS?>images/Polaroid.png"></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-6 ml-4">
                                             <h6 class=" text-uppercase">Top Brands</h6>
                                             <ul class="list-unstyled">
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">ARMANI EXCHANGE</a></li>
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">HUGO</a></li>
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">POLAROID</a></li>
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">RAY BAN</a></li>
+                                                <li class="nav-item"><a href="" class="nav-link"><img class="brands"src="<?=ASSETS?>images/Ralph-Lauren.png"></a></li>
+                                                <li class="nav-item"><a href="" class="nav-link"><img class="brands"src="<?=ASSETS?>images/tommyhilfiger.jpg"></a></li>
                                             </ul>
                                         </div>
-                                        <div class="col-lg-6 mb-4">
-                                            <h6 class=" text-uppercase">More Brands</h6>
-                                            <ul class="list-unstyled">
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Diva</a></li>
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Kodak</a></li>
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Pierre Cardin</a></li>
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Ralph Lauren</a></li>
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">SEVENTH STREET</a></li>
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Tommy Hilfiger</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-lg-5 col-xl-4 px-0 d-none d-lg-block" style="background: center center url(https://images.unsplash.com/photo-1533637267520-4dfd6aa7ee93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1268&q=80)no-repeat; background-size: cover;"></div>
+                                       
 
                                         
                                     </div>
