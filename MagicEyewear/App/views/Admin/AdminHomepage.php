@@ -17,7 +17,7 @@
                         </div>
                         <div class="col-md-8">
                             <h4 class="font-20 weight-500 mb-10 text-capitalize">
-                                <span style="color:#1b98e0;">Welcome back </span> <div class="weight-600 font-30 text-blue " style="color:#13293d;">Ahmed Jamal!</div>
+                                <span style="color:#1b98e0;">Welcome back </span> <div class="weight-600 font-30 text-blue " style="color:#13293d;"><?php echo $_SESSION['firstName'];?></div>
                             </h4>
                             
                         </div>

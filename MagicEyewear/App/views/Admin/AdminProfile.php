@@ -26,18 +26,18 @@
 					<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mb-30">
 						<div class="pd-20 card-box height-100-p">
 							
-							<h5 class="text-center h5 mb-0">Ahmed Jamal</h5>
+							<h5 class="text-center h5 mb-0">Samiha Hussien</h5>
 							<p class="text-center text-muted font-14">Admin in Magic Eyecare website </p>
 							<div class="profile-info">
 								<h5 class="mb-20 h5 text-blue" style="color:#1c2d5e;">Contact Information</h5>
 								<ul>
 									<li>
 										<span style="color:#1b98e0;">Name:</span>
-										<span style="color:#13293d;">Ahmed Jamal<span>
+										<span style="color:#13293d;">Samiha Hussien<span>
 									</li>
 									<li>
 									<span style="color:#1b98e0;">Email Address:</span>
-									<span style="color:#13293d;">AhmedJamalAdmin@hotmail.com<span>
+									<span style="color:#13293d;">samihahussien@gmail.com<span>
 									</li>
 									<li>
 										<span style="color:#1b98e0;">Phone Number:</span>

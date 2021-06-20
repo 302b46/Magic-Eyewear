@@ -238,9 +238,17 @@
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 
             <li>
-              <a class="dropdown-item" href="#"> 
+                <?php if($_SESSION['userType']==1){
+
+                ?>
+              <a class="dropdown-item" href="<?=ROOT?>Admin"> 
                 <i class="fa fa-user" style="font-size:24px"></i> Go To Profile</a>
             </li>
+            <?php } else {?>
+                <a class="dropdown-item" href="<?=ROOT?>profile"> 
+                <i class="fa fa-user" style="font-size:24px"></i> Go To Profile</a>
+                <?php } ?>
+
             <li><hr class="dropdown-divider"></li>
 
             <li>
@@ -251,7 +259,7 @@
 
           
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="<?=ROOT?>cart">
               <i class="fa fa-shopping-cart" style="font-size:24px"></i>
               Cart
               </a></li>
