@@ -28,14 +28,14 @@
   <!-- first slide -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="<?=ASSETS?>images/DIVA rosa.jpg" alt="First slide">
+      <img class="d-block w-100" src="<?=ASSETS?>Images/DIVA rosa.jpg" alt="First slide">
 	  <div class="carousel-caption d-none d-md-block">
     <h3>We Sell Solutions Not Products</h3>
   </div>
     </div>
  <!-- second slide -->
     <div class="carousel-item">
-      <img class="d-block w-100" src="<?=ASSETS?>images/vto2.gif" alt="Second slide">
+      <img class="d-block w-100" src="<?=ASSETS?>Images/vto2.gif" alt="Second slide">
 	  <div class="carousel-caption d-none d-md-block">
 	  <h3>Meet Our Virtual Mirror</h3>
 	  <h5> First Virtual Try-On Software in Egypt! </h5>
@@ -43,7 +43,7 @@
     </div>
  <!-- third slide -->
     <div class="carousel-item">
-      <img class="d-block w-100" src="<?=ASSETS?>images/faceshapes.jpg" alt="Third slide">
+      <img class="d-block w-100" src="<?=ASSETS?>Images/faceshapes.jpg" alt="Third slide">
 	  <div class="carousel-caption d-none d-md-block">
 	  <h3>Discover the Best Eyewear for Your Face Shape</h3>
   </div>

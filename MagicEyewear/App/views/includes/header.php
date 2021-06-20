@@ -223,7 +223,7 @@
 
 
             <li class="nav-item">
-          <a class="nav-link" href="<?=ROOT?>guideHomepage"  data-toggle="tooltip" title="Know how to pick a frame suitable for your face!">Frame Guide</a>
+          <a class="nav-link" href="<?=ROOT?>frameGuide"  data-toggle="tooltip" title="Know how to pick a frame suitable for your face!">Frame Guide</a>
         </li>
             <li class="nav-item"><a href="<?=ROOT?>aboutus" class="nav-link  text-capitalize">About Us</a></li>
         </ul>

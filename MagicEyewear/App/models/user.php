@@ -14,7 +14,7 @@ class User
             $userInputArray['email'] = $POST['email'];
             $userInputArray['password'] = md5($POST['password']);
             $loginQuery = "SELECT * FROM user WHERE Email=:email && Password=:password LIMIT 1";
-            $userData = $database->read($loginQuery, $userInputArray);
+            $userData = $database->read($loginQuery,$userInputArray);
             
             if(is_array($userData))
             {
@@ -25,7 +25,7 @@ class User
             }//End of is_array
             else
             {
-                $_SESSION['errorMessage'] = "Wrong email or password.";
+                echo $_SESSION['errorMessage'] = "Wrong email or password.";
 
             }
         }//End of isset
