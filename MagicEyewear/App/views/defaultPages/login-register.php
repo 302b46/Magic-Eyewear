@@ -26,20 +26,24 @@
 			<input type="email" placeholder="Email" name="email" required/>
 			<input type="password" placeholder="Password" name="password" required/><br>
 			<button type="submit" name="login">Sign In</button>
+			<br>
+			<a class="website" href="<?=ROOT?>index">Go Back To Website</a>
+		
 		</form>
 	</div>
 	<div class="overlay-container">
 		<div class="overlay">
 			<div class="overlay-panel overlay-left">
-            <!-- <img class="logo" src="/MagicEyewear/eyecare-logo-white.png"> -->
+            <img class="logo" src="<?=ASSETS?>Images/logo/eyecare-logo-white.png">
 
 				<h1>Welcome Back!</h1>
 				<p>Sign In To Get Your New Pair Of Glasses!</p>
 				<button class="ghost" id="signIn">Sign In</button>
+				
 			</div>
 			<div class="overlay-panel overlay-right">
-            <!-- <img class="logo" src="/MagicEyewear/eyecare-logo-white.png"> -->
-
+            <img class="logo" src="<?=ASSETS?>Images/logo/eyecare-logo-white.png">
+				
 				<h1>Hello, Friend!</h1>
 				<p>Enter your personal details and start your journey with us</p>
 				<button class="ghost" id="signUp">Sign Up</button>

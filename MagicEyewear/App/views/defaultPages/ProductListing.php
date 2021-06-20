@@ -1,3 +1,4 @@
+<?php   $this->view("includes/header",$data);?> 
 <?php 
  $host = "localhost";  
  $db_user = "root";  
@@ -18,15 +19,16 @@
 
     <title></title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+    
     <link href="<?=ASSETS?>css/ProductListing.css" rel="stylesheet">
 
 </head>
 
 <body>
-<?php //  $this->view("includes/header",$data);?>   
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+  
     <!-- Page Content -->
     <div class="container">
         <br>
@@ -156,12 +158,15 @@ var x = document.getElementById("filtersbar");
 
     </div>
 
+<<<<<<< HEAD
    <!-- <script src="js/jquery-1.11.1.min.js"></script> -->>
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <!--<script src="js/bootstrap.min.js"></script>-->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"  ></script>
     <!--<script src="js/jquery-ui.js"></script>-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+=======
+>>>>>>> 9fd488e6dfd731dcf137d5519f9e6b72a74797b0
 
     <script>
         $(document).ready(function() {
@@ -221,6 +226,7 @@ var x = document.getElementById("filtersbar");
 
         });
     </script>
+<?php   $this->view("includes/footer",$data);?> 
 
 </body>
 
