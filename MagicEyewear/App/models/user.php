@@ -16,12 +16,18 @@ class User
             $loginQuery = "SELECT * FROM user WHERE Email=:email && Password=:password LIMIT 1";
             $userData = $database->read($loginQuery, $userInputArray);
             
-            if(is_array($userData))
-            {
-                //User is logged in
+            //User is logged in
                 $_SESSION['userID'] = $userData[0]->UserID;
                 $_SESSION['email'] = $userData[0]->Email;
-                header("Location:".ROOT."homepage");
+                if($userData[0]->UserType ==1)
+                {
+                    header("Location:".ROOT."Admin");
+
+                }
+                else{
+                    header("Location:".ROOT."homepage");
+
+                }
             }//End of is_array
             else
             {
