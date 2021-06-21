@@ -37,19 +37,19 @@
                                         <div class="col-lg-6 mb-4">
                                             <h6 class=" text-uppercase">Shop By Brand</h6>
                                             <ul class="list-unstyled">
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">ARMANI EXCHANGE</a></li>
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">HUGO</a></li>
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">RAY BAN</a></li>
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">More Brands</a></li>
+                                                <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">ARMANI EXCHANGE</a></li>
+                                                <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">HUGO</a></li>
+                                                <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">RAY BAN</a></li>
+                                                <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">More Brands</a></li>
                                             </ul>
                                         </div>
                                         <div class="col-lg-6 mb-4">
                                             <h6 class=" text-uppercase">Shop By Color</h6>
                                             <ul class="list-unstyled">
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Black</a></li>
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Blue</a></li>
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">White</a></li>
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">More Colors</a></li>
+                                                <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">Black</a></li>
+                                                <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">Blue</a></li>
+                                                <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">White</a></li>
+                                                <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">More Colors</a></li>
                                             </ul>
                                         </div>
                                         <div class="col-lg-6 mb-4">

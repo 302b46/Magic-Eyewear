@@ -6,7 +6,7 @@ class Products extends Controller
     function index()
     {
         $data['page_title'] = "Products";
-        $this->view("defaultPages/ProductListing",$data);
+        $this->view("defaultPages/filter",$data);
 
     }
 }
