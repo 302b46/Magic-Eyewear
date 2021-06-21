@@ -97,6 +97,7 @@ section {
   flex-flow: column wrap;
   align-items: center;
   justify-content: center;
+  background-image:url("https://images.unsplash.com/photo-1528458909336-e7a0adfed0a5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGxhaW4lMjBiZWlnZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");
  
   /* box-shadow: 0 3px 3px -1px rgba(30, 31, 32, 0.5); */
   background-size: cover;

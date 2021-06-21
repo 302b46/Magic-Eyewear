@@ -88,11 +88,6 @@ class User
         
 
 
-
-
-
-
-
     }//End of signup()
 
     function checkLoggedIn()
@@ -128,8 +123,6 @@ class User
         die;
 
     }//End of logout()
-
-
 
 
 
