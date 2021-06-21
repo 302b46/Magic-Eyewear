@@ -20,7 +20,7 @@
             <video id="camera" loop></video>
             <canvas id="overlay"></canvas>
         </div>
-        <button id="start">Try-On</button>
+        <button type="button" id="start" onclick='' class="tryOn"><i class="fi-xnluxl-robot-rounded"></i> Try-On</button>
         <div id="debug"></div>
 
         <script>

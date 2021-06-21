@@ -35,10 +35,7 @@
                    
                     
                   </div>
-                  <div class="text-center text-sm-right">
-                    
-                    <div class="text-muted"><small>Joined 18 May 2021</small></div>
-                  </div>
+                  
                 </div>
               </div>
               <div class="portlet-body">
@@ -58,14 +55,14 @@
                         <div class="row">
                           <div class="col">
                             <div class="form-group">
-                              <label>Full Name</label>
-                              <input class="form-control" type="text" name="name" placeholder="Salma Ahmed" value="Salma Ahmed">
+                              <label>First Name</label>
+                              <input class="form-control" type="text" name="name" placeholder="Salma" value="Salma">
                             </div>
                           </div>
                           <div class="col">
                             <div class="form-group">
-                              <label>Username</label>
-                              <input class="form-control" type="text" name="username" placeholder="salma22" value="salma22" readonly>
+                              <label>Last Name</label>
+                              <input class="form-control" type="text" name="last" placeholder="salma22" value="Ahmed">
                             </div>
                           </div>
                         </div>
@@ -87,7 +84,7 @@
                           <div class="col">
                             <div class="form-group">
                               <label>Current Password</label>
-                              <input class="form-control" type="password" placeholder="••••••">
+                              <input class="form-control" type="password" >
                             </div>
                           </div>
                         </div>
@@ -95,7 +92,7 @@
                           <div class="col">
                             <div class="form-group">
                               <label>New Password</label>
-                              <input class="form-control" type="password" placeholder="••••••">
+                              <input class="form-control" type="password" >
                             </div>
                           </div>
                         </div>
@@ -103,7 +100,7 @@
                           <div class="col">
                             <div class="form-group">
                               <label>Confirm <span class="d-none d-xl-inline">Password</span></label>
-                              <input class="form-control" type="password" placeholder="••••••"></div>
+                              <input class="form-control" type="password" ></div>
                           </div>
                         </div>
                       </div>

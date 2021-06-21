@@ -10,11 +10,11 @@
   <style>
 	  
 body {
-  background-color: #95c2de;
+  background-color: #1B98E0;
 }
 
 .mainbox {
-  background-color: #95c2de;
+  background-color: #1B98E0;
   margin: auto;
   height: 600px;
   width: 600px;

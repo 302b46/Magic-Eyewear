@@ -22,6 +22,8 @@ class User
                 $_SESSION['userID'] = $userData[0]->UserID;
                 $_SESSION['email'] = $userData[0]->Email;
                 $_SESSION['firstName'] = $userData[0]->FirstName;
+                $_SESSION['lastName'] = $userData[0]->LastName;
+                $_SESSION['userType'] = $userData[0]->UserType;
                     if($userData[0]->UserType == 1)
                     { 
                         header("Location:".ROOT."Admin"); 
@@ -86,11 +88,6 @@ class User
         
 
 
-
-
-
-
-
     }//End of signup()
 
     function checkLoggedIn()
@@ -126,8 +123,6 @@ class User
         die;
 
     }//End of logout()
-
-
 
 
 

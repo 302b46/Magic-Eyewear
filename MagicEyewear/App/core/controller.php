@@ -26,6 +26,12 @@ class Controller
  		return false;
 	}
 
+
+	function goToImgUrl($url)
+{
+   echo "<img src=$url>";
+}
+
 }//End of class
 
 

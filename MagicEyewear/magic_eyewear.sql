@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.1
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Jun 19, 2021 at 10:57 PM
--- Server version: 10.4.11-MariaDB
--- PHP Version: 7.4.3
+-- Host: 127.0.0.1:3306
+-- Generation Time: Jun 21, 2021 at 04:29 AM
+-- Server version: 5.7.31
+-- PHP Version: 7.1.33
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -28,11 +27,13 @@ SET time_zone = "+00:00";
 -- Table structure for table `brand`
 --
 
-CREATE TABLE `brand` (
-  `BrandID` int(11) NOT NULL,
+DROP TABLE IF EXISTS `brand`;
+CREATE TABLE IF NOT EXISTS `brand` (
+  `BrandID` int(11) NOT NULL AUTO_INCREMENT,
   `BrandName` varchar(50) NOT NULL,
-  `BrandImg` blob NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `BrandImg` blob NOT NULL,
+  PRIMARY KEY (`BrandID`)
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `brand`
@@ -60,10 +61,12 @@ INSERT INTO `brand` (`BrandID`, `BrandName`, `BrandImg`) VALUES
 -- Table structure for table `color`
 --
 
-CREATE TABLE `color` (
-  `ColorID` int(11) NOT NULL,
-  `ColorName` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+DROP TABLE IF EXISTS `color`;
+CREATE TABLE IF NOT EXISTS `color` (
+  `ColorID` int(11) NOT NULL AUTO_INCREMENT,
+  `ColorName` varchar(50) NOT NULL,
+  PRIMARY KEY (`ColorID`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `color`
@@ -83,8 +86,9 @@ INSERT INTO `color` (`ColorID`, `ColorName`) VALUES
 -- Table structure for table `frame`
 --
 
-CREATE TABLE `frame` (
-  `FrameID` int(11) NOT NULL,
+DROP TABLE IF EXISTS `frame`;
+CREATE TABLE IF NOT EXISTS `frame` (
+  `FrameID` int(11) NOT NULL AUTO_INCREMENT,
   `FrameCode` varchar(50) NOT NULL,
   `FrameType` int(11) NOT NULL,
   `FrameBrand` int(11) NOT NULL,
@@ -96,16 +100,34 @@ CREATE TABLE `frame` (
   `FrameSize` int(11) NOT NULL,
   `FrameImage` varchar(250) NOT NULL,
   `FrameShape` int(11) NOT NULL,
-  `FramePrice` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `FramePrice` int(11) NOT NULL,
+  PRIMARY KEY (`FrameID`),
+  KEY `FrameType` (`FrameType`),
+  KEY `FrameBrand` (`FrameBrand`),
+  KEY `FrameColor` (`FrameColor`),
+  KEY `FrameRim` (`FrameRim`),
+  KEY `FrameRim_2` (`FrameRim`),
+  KEY `FrameColor_2` (`FrameColor`),
+  KEY `FrameBrand_2` (`FrameBrand`),
+  KEY `FrameType_2` (`FrameType`),
+  KEY `AssignedGender` (`AssignedGender`),
+  KEY `FrameMaterial` (`FrameMaterial`),
+  KEY `AssignedGender_2` (`AssignedGender`),
+  KEY `FrameShape` (`FrameShape`),
+  KEY `FrameType_3` (`FrameType`),
+  KEY `FrameSize` (`FrameSize`)
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `frame`
 --
 
 INSERT INTO `frame` (`FrameID`, `FrameCode`, `FrameType`, `FrameBrand`, `FrameDescription`, `FrameColor`, `FrameRim`, `FrameMaterial`, `AssignedGender`, `FrameSize`, `FrameImage`, `FrameShape`, `FramePrice`) VALUES
-(3, '21111134', 1, 4, 'ayhaga', 3, 2, 2, 2, 20, 'blue.jpg', 1, 200),
-(4, '21111134', 1, 4, 'aaaaaaa', 3, 2, 2, 2, 20, 'blue.jpg', 1, 500);
+(5, '716736086620', 2, 3, 'These sunglasses are the perfect accessory on the beach, on the way to the office, or in the city.', 1, 1, 1, 2, 54, 'https://img.edel-optics.com/eoProductsGlassesSunglasses/1024/nobg/Polaroid-PLD-6097-S-807-M9.jpg', 3, 800),
+(6, '716736096001', 1, 4, 'The term \"visual aid\" is unsuitable for HG 0233. This is an accessory that ushers in a new you, emphasizing your clear view on fashion. ', 1, 1, 4, 1, 32, 'https://img.edel-optics.ae/eoProductsGlassesPrescription/1024/nobg/Hugo-HG-0233-003.jpg', 1, 1320),
+(7, '716736179902', 1, 6, 'The term \"visual aid\" is unsuitable for P.C. 8850. This is an accessory that ushers in a new you, emphasizing your clear view on fashion.', 2, 2, 4, 1, 24, 'https://img.edel-optics.com/eoProductsGlassesPrescription/1024/nobg/Pierre-Cardin-P.C.-8850-010.jpg', 7, 2000),
+(8, '716736190136', 1, 2, 'With these designer eyeglasses, you are always perfectly dressed. The TH 1680 is brand new on the market in 2019, with this eyewear you are at the cutting-edge of trends. ', 2, 3, 4, 1, 32, 'https://img.edel-optics.com/eoProductsGlassesPrescription/1024/nobg/Tommy-Hilfiger-TH-1680-J5G.jpg', 2, 1600),
+(9, '716736222028', 1, 5, 'The term \"visual aid\" is unsuitable for 7A 547. This is an accessory that ushers in a new you, emphasizing your clear view on fashion.', 1, 1, 1, 1, 32, 'https://img.edel-optics.com/eoProductsGlassesPrescription/1024/nobg/Seventh-Street-7A-547-807.jpg', 1, 1360);
 
 -- --------------------------------------------------------
 
@@ -113,10 +135,12 @@ INSERT INTO `frame` (`FrameID`, `FrameCode`, `FrameType`, `FrameBrand`, `FrameDe
 -- Table structure for table `frameshape`
 --
 
-CREATE TABLE `frameshape` (
-  `FrameShapeID` int(11) NOT NULL,
-  `FrameShapeName` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+DROP TABLE IF EXISTS `frameshape`;
+CREATE TABLE IF NOT EXISTS `frameshape` (
+  `FrameShapeID` int(11) NOT NULL AUTO_INCREMENT,
+  `FrameShapeName` varchar(50) NOT NULL,
+  PRIMARY KEY (`FrameShapeID`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `frameshape`
@@ -138,10 +162,12 @@ INSERT INTO `frameshape` (`FrameShapeID`, `FrameShapeName`) VALUES
 -- Table structure for table `frametype`
 --
 
-CREATE TABLE `frametype` (
-  `FrameTypeID` int(11) NOT NULL,
-  `TypeName` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+DROP TABLE IF EXISTS `frametype`;
+CREATE TABLE IF NOT EXISTS `frametype` (
+  `FrameTypeID` int(11) NOT NULL AUTO_INCREMENT,
+  `TypeName` varchar(50) NOT NULL,
+  PRIMARY KEY (`FrameTypeID`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `frametype`
@@ -158,10 +184,12 @@ INSERT INTO `frametype` (`FrameTypeID`, `TypeName`) VALUES
 -- Table structure for table `gender`
 --
 
-CREATE TABLE `gender` (
-  `GenderID` int(11) NOT NULL,
-  `GenderType` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+DROP TABLE IF EXISTS `gender`;
+CREATE TABLE IF NOT EXISTS `gender` (
+  `GenderID` int(11) NOT NULL AUTO_INCREMENT,
+  `GenderType` varchar(50) NOT NULL,
+  PRIMARY KEY (`GenderID`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `gender`
@@ -179,10 +207,12 @@ INSERT INTO `gender` (`GenderID`, `GenderType`) VALUES
 -- Table structure for table `material`
 --
 
-CREATE TABLE `material` (
-  `MaterialID` int(11) NOT NULL,
-  `Material` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+DROP TABLE IF EXISTS `material`;
+CREATE TABLE IF NOT EXISTS `material` (
+  `MaterialID` int(11) NOT NULL AUTO_INCREMENT,
+  `Material` varchar(50) NOT NULL,
+  PRIMARY KEY (`MaterialID`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `material`
@@ -201,11 +231,15 @@ INSERT INTO `material` (`MaterialID`, `Material`) VALUES
 -- Table structure for table `ordercart`
 --
 
-CREATE TABLE `ordercart` (
-  `OrderID` int(11) NOT NULL,
+DROP TABLE IF EXISTS `ordercart`;
+CREATE TABLE IF NOT EXISTS `ordercart` (
+  `OrderID` int(11) NOT NULL AUTO_INCREMENT,
   `ClientID` int(11) NOT NULL,
   `FrameID` int(11) NOT NULL,
-  `TotalPrice` int(11) NOT NULL
+  `TotalPrice` int(11) NOT NULL,
+  PRIMARY KEY (`OrderID`),
+  KEY `ClientID` (`ClientID`),
+  KEY `FrameID` (`FrameID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -214,10 +248,12 @@ CREATE TABLE `ordercart` (
 -- Table structure for table `rim`
 --
 
-CREATE TABLE `rim` (
-  `RimID` int(11) NOT NULL,
-  `Type` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+DROP TABLE IF EXISTS `rim`;
+CREATE TABLE IF NOT EXISTS `rim` (
+  `RimID` int(11) NOT NULL AUTO_INCREMENT,
+  `Type` varchar(50) NOT NULL,
+  PRIMARY KEY (`RimID`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `rim`
@@ -234,14 +270,24 @@ INSERT INTO `rim` (`RimID`, `Type`) VALUES
 -- Table structure for table `user`
 --
 
-CREATE TABLE `user` (
-  `UserID` int(11) NOT NULL,
+DROP TABLE IF EXISTS `user`;
+CREATE TABLE IF NOT EXISTS `user` (
+  `UserID` int(11) NOT NULL AUTO_INCREMENT,
   `FirstName` varchar(50) NOT NULL,
   `LastName` varchar(50) NOT NULL,
   `Email` varchar(50) NOT NULL,
   `Password` varchar(50) NOT NULL,
-  `UserType` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `UserType` int(11) NOT NULL,
+  PRIMARY KEY (`UserID`),
+  KEY `UserType` (`UserType`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`UserID`, `FirstName`, `LastName`, `Email`, `Password`, `UserType`) VALUES
+(1, 'salma', 'ahmed', 'salma@gmail.com', '81dc9bdb52d04dc20036dbd8313ed055', 2);
 
 -- --------------------------------------------------------
 
@@ -249,10 +295,12 @@ CREATE TABLE `user` (
 -- Table structure for table `usertype`
 --
 
-CREATE TABLE `usertype` (
-  `UserTypeID` int(11) NOT NULL,
-  `UserType` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+DROP TABLE IF EXISTS `usertype`;
+CREATE TABLE IF NOT EXISTS `usertype` (
+  `UserTypeID` int(11) NOT NULL AUTO_INCREMENT,
+  `UserType` varchar(50) NOT NULL,
+  PRIMARY KEY (`UserTypeID`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `usertype`
@@ -261,163 +309,6 @@ CREATE TABLE `usertype` (
 INSERT INTO `usertype` (`UserTypeID`, `UserType`) VALUES
 (1, 'Admin'),
 (2, 'Client');
-
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `brand`
---
-ALTER TABLE `brand`
-  ADD PRIMARY KEY (`BrandID`);
-
---
--- Indexes for table `color`
---
-ALTER TABLE `color`
-  ADD PRIMARY KEY (`ColorID`);
-
---
--- Indexes for table `frame`
---
-ALTER TABLE `frame`
-  ADD PRIMARY KEY (`FrameID`),
-  ADD KEY `FrameType` (`FrameType`),
-  ADD KEY `FrameBrand` (`FrameBrand`),
-  ADD KEY `FrameColor` (`FrameColor`),
-  ADD KEY `FrameRim` (`FrameRim`),
-  ADD KEY `FrameRim_2` (`FrameRim`),
-  ADD KEY `FrameColor_2` (`FrameColor`),
-  ADD KEY `FrameBrand_2` (`FrameBrand`),
-  ADD KEY `FrameType_2` (`FrameType`),
-  ADD KEY `AssignedGender` (`AssignedGender`),
-  ADD KEY `FrameMaterial` (`FrameMaterial`),
-  ADD KEY `AssignedGender_2` (`AssignedGender`),
-  ADD KEY `FrameShape` (`FrameShape`),
-  ADD KEY `FrameType_3` (`FrameType`),
-  ADD KEY `FrameSize` (`FrameSize`);
-
---
--- Indexes for table `frameshape`
---
-ALTER TABLE `frameshape`
-  ADD PRIMARY KEY (`FrameShapeID`);
-
---
--- Indexes for table `frametype`
---
-ALTER TABLE `frametype`
-  ADD PRIMARY KEY (`FrameTypeID`);
-
---
--- Indexes for table `gender`
---
-ALTER TABLE `gender`
-  ADD PRIMARY KEY (`GenderID`);
-
---
--- Indexes for table `material`
---
-ALTER TABLE `material`
-  ADD PRIMARY KEY (`MaterialID`);
-
---
--- Indexes for table `ordercart`
---
-ALTER TABLE `ordercart`
-  ADD PRIMARY KEY (`OrderID`),
-  ADD KEY `ClientID` (`ClientID`),
-  ADD KEY `FrameID` (`FrameID`);
-
---
--- Indexes for table `rim`
---
-ALTER TABLE `rim`
-  ADD PRIMARY KEY (`RimID`);
-
---
--- Indexes for table `user`
---
-ALTER TABLE `user`
-  ADD PRIMARY KEY (`UserID`),
-  ADD KEY `UserType` (`UserType`);
-
---
--- Indexes for table `usertype`
---
-ALTER TABLE `usertype`
-  ADD PRIMARY KEY (`UserTypeID`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `brand`
---
-ALTER TABLE `brand`
-  MODIFY `BrandID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
-
---
--- AUTO_INCREMENT for table `color`
---
-ALTER TABLE `color`
-  MODIFY `ColorID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
---
--- AUTO_INCREMENT for table `frame`
---
-ALTER TABLE `frame`
-  MODIFY `FrameID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
-
---
--- AUTO_INCREMENT for table `frameshape`
---
-ALTER TABLE `frameshape`
-  MODIFY `FrameShapeID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
-
---
--- AUTO_INCREMENT for table `frametype`
---
-ALTER TABLE `frametype`
-  MODIFY `FrameTypeID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
--- AUTO_INCREMENT for table `gender`
---
-ALTER TABLE `gender`
-  MODIFY `GenderID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
-
---
--- AUTO_INCREMENT for table `material`
---
-ALTER TABLE `material`
-  MODIFY `MaterialID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
-
---
--- AUTO_INCREMENT for table `ordercart`
---
-ALTER TABLE `ordercart`
-  MODIFY `OrderID` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `rim`
---
-ALTER TABLE `rim`
-  MODIFY `RimID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
--- AUTO_INCREMENT for table `user`
---
-ALTER TABLE `user`
-  MODIFY `UserID` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `usertype`
---
-ALTER TABLE `usertype`
-  MODIFY `UserTypeID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Constraints for dumped tables

@@ -38,7 +38,7 @@
         <div class="header-right" style="padding-top:25px; padding-right:30px;">
             
             <a style="color:#0b132b;" class="dropdown-toggle no-arrow" href="<?=ROOT?>AdminProfile" role="button" 
-			><h6>Ahmed Jamal</h6></a>
+			><h6>Samiha Hussien</h6></a>
                   
             
         </div>

@@ -30,7 +30,7 @@
               <h1 class="main-text">EyeCare Optics</h1>
               <p class="sub-text">Not Just An Eyewear Company.</p>
             </div>
-            <div class="fixed-bg bg-1-1">
+            <div id="who" class="fixed-bg bg-1-1">
               <div class="text-box">
                 <h2>Who Are We?</h2>
                 <p>
@@ -39,10 +39,10 @@
                 </p>
               </div>
             </div>
-            <div class="fixed-bg bg-2">
+            <div id="mission" class="fixed-bg bg-2">
               <h1>Our Mission</h1>
             </div>
-            <div class="fixed-bg bg-2-1">
+            <div  class="fixed-bg bg-2-1">
               <div class="text-box">
                 <h2>Our Mission</h2>
 
@@ -54,10 +54,10 @@
                 
               </div>
             </div>
-            <div class="fixed-bg bg-3">
+            <div id="vision" class="fixed-bg bg-3">
               <h1>Our Vision</h1>
             </div>
-            <div class="fixed-bg bg-3-1">
+            <div  class="fixed-bg bg-3-1">
               <div class="text-box">
                 <h2>Our Vision</h2>
                 <p>
@@ -67,10 +67,10 @@
                 
               </div>
             </div>
-            <div class="fixed-bg bg-4">
+            <div id="where" class="fixed-bg bg-4">
                 <h1>Where To Find Us</h1>
               </div>
-              <div class="fixed-bg bg-4-1">
+              <div  class="fixed-bg bg-4-1">
                 <div class="text-box">
                   <h2>Our Stores:</h2>
                   <p>

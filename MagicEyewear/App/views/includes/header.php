@@ -25,7 +25,7 @@
                             <div class="col-lg-7 col-xl-8">
                                 <div class="p-4">
                                     <div class="row">
-                                        <div class="col-lg-6 mb-4">
+                                    <div class="col-lg-6 mb-4">
                                             <h6 class=" text-uppercase">Shop By Gender</h6>
                                             <ul class="list-unstyled">
                                                 <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0">Women</a></li>
@@ -46,7 +46,7 @@
                                         <div class="col-lg-6 mb-4">
                                             <h6 class=" text-uppercase">Shop By Color</h6>
                                             <ul class="list-unstyled">
-                                                <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">Black</a></li>
+                                                 <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">Black</a></li>
                                                 <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">Blue</a></li>
                                                 <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">White</a></li>
                                                 <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">More Colors</a></li>
@@ -55,11 +55,11 @@
                                         <div class="col-lg-6 mb-4">
                                             <h6 class=" text-uppercase">Shop By Material</h6>
                                             <ul class="list-unstyled">
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Acetate</a></li>
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Eco Polyamide</a></li>
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Metal</a></li>
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Polycarbonate</a></li>
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Stainless Steel</a></li>
+                                            <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Acetate</a></li>
+                                                <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">Eco Polyamide</a></li>
+                                                <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">Metal</a></li>
+                                                <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">Polycarbonate</a></li>
+                                                <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">Stainless Steel</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -81,41 +81,41 @@
                             <div class="col-lg-7 col-xl-8">
                                 <div class="p-4">
                                     <div class="row">
-                                        <div class="col-lg-6 mb-4">
+                                    <div class="col-lg-6 mb-4">
                                             <h6 class=" text-uppercase">Shop By Gender</h6>
                                             <ul class="list-unstyled">
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0">Women</a></li>
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Men</a></li>
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Girls</a></li>
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Boys</a></li>
+                                                <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0">Women</a></li>
+                                                <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">Men</a></li>
+                                                <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">Girls</a></li>
+                                                <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">Boys</a></li>
                                             </ul>
                                         </div>
                                         <div class="col-lg-6 mb-4">
                                             <h6 class=" text-uppercase">Shop By Brand</h6>
                                             <ul class="list-unstyled">
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">ARMANI EXCHANGE</a></li>
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">HUGO</a></li>
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">RAY BAN</a></li>
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">More Brands</a></li>
+                                                <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">ARMANI EXCHANGE</a></li>
+                                                <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">HUGO</a></li>
+                                                <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">RAY BAN</a></li>
+                                                <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">More Brands</a></li>
                                             </ul>
                                         </div>
                                         <div class="col-lg-6 mb-4">
                                             <h6 class=" text-uppercase">Shop By Color</h6>
                                             <ul class="list-unstyled">
-                                            <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Black</a></li>
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Blue</a></li>
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">White</a></li>
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">More Colors</a></li>
+                                            <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">Black</a></li>
+                                                <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">Blue</a></li>
+                                                <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">White</a></li>
+                                                <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">More Colors</a></li>
                                             </ul>
                                         </div>
                                         <div class="col-lg-6 mb-4">
                                             <h6 class=" text-uppercase">Shop By Material</h6>
                                             <ul class="list-unstyled">
                                             <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Acetate</a></li>
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Eco Polyamide</a></li>
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Metal</a></li>
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Polycarbonate</a></li>
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Stainless Steel</a></li>
+                                                <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">Eco Polyamide</a></li>
+                                                <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">Metal</a></li>
+                                                <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">Polycarbonate</a></li>
+                                                <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">Stainless Steel</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -138,38 +138,38 @@
                                       <div class="col-lg-6 mb-4">
                                             <h6 class=" text-uppercase">Shop By Gender</h6>
                                             <ul class="list-unstyled">
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0">Women</a></li>
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Men</a></li>
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Girls</a></li>
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Boys</a></li>
+                                                <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0">Women</a></li>
+                                                <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">Men</a></li>
+                                                <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">Girls</a></li>
+                                                <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">Boys</a></li>
                                             </ul>
                                         </div>
                                         <div class="col-lg-6 mb-4">
                                             <h6 class=" text-uppercase">Shop By Brand</h6>
                                             <ul class="list-unstyled">
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">ARMANI EXCHANGE</a></li>
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">HUGO</a></li>
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">RAY BAN</a></li>
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">More Brands</a></li>
+                                                <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">ARMANI EXCHANGE</a></li>
+                                                <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">HUGO</a></li>
+                                                <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">RAY BAN</a></li>
+                                                <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">More Brands</a></li>
                                             </ul>
                                         </div>
                                         <div class="col-lg-6 mb-4">
                                             <h6 class=" text-uppercase">Shop By Color</h6>
                                             <ul class="list-unstyled">
-                                            <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Black</a></li>
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Blue</a></li>
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">White</a></li>
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">More Colors</a></li>
+                                            <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">Black</a></li>
+                                                <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">Blue</a></li>
+                                                <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">White</a></li>
+                                                <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">More Colors</a></li>
                                             </ul>
                                         </div>
                                         <div class="col-lg-6 mb-4">
                                             <h6 class=" text-uppercase">Shop By Material</h6>
                                             <ul class="list-unstyled">
                                             <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Acetate</a></li>
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Eco Polyamide</a></li>
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Metal</a></li>
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Polycarbonate</a></li>
-                                                <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Stainless Steel</a></li>
+                                                <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">Eco Polyamide</a></li>
+                                                <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">Metal</a></li>
+                                                <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">Polycarbonate</a></li>
+                                                <li class="nav-item"><a href="<?=ROOT?>Products" class="nav-link text-small pb-0 ">Stainless Steel</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -238,9 +238,17 @@
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 
             <li>
-              <a class="dropdown-item" href="#"> 
+                <?php if($_SESSION['userType']==1){
+
+                ?>
+              <a class="dropdown-item" href="<?=ROOT?>Admin"> 
                 <i class="fa fa-user" style="font-size:24px"></i> Go To Profile</a>
             </li>
+            <?php } else {?>
+                <a class="dropdown-item" href="<?=ROOT?>profile"> 
+                <i class="fa fa-user" style="font-size:24px"></i> Go To Profile</a>
+                <?php } ?>
+
             <li><hr class="dropdown-divider"></li>
 
             <li>
@@ -251,7 +259,7 @@
 
           
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="<?=ROOT?>cart">
               <i class="fa fa-shopping-cart" style="font-size:24px"></i>
               Cart
               </a></li>
