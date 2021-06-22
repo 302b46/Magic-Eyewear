@@ -33,7 +33,7 @@
                   
                 </div>
               </div>
-              <div class="portlet-body" style="">
+              <div class="portlet-body" >
                 <div>
               <!-- Nav Tabs -->
               <ul class="nav nav-tabs" role="tablist">
