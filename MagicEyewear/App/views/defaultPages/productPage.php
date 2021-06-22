@@ -76,7 +76,10 @@
 <p class="mb-2 text-muted text-uppercase small">Sunglasses</p>
 
 <p><span class="mr-1"><strong>1,500 EGP</strong></span></p>
-<p class="pt-1"><?=ROOT.$data['post']->FrameDescription?></p>
+<p class="pt-1">
+<!-- <?=ROOT.$data['post']->FrameDescription?> -->
+The term "visual aid" is unsuitable for 7A 547. This is an accessory that ushers in a new you, emphasizing your clear view on fashion.
+</p>
 <div class="table-responsive">
   <table class="table table-sm table-borderless mb-0">
     <tbody>

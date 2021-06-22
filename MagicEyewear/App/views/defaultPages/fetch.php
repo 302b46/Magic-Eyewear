@@ -80,8 +80,8 @@ if(isset($_POST["action"]))
 
            </a>
            <ul class="social">
-               <li><a href="'.ROOT.'productPage/'.$row['FrameDescription'].'" data-tip="View Product"><i class="fa fa-eye"></i></a></li>
-               <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+               <li><a href="'.ROOT.'productPage/'.$row['FrameID'].'" data-tip="View Product"><i class="fa fa-eye"></i></a></li>
+               <li><a href="'.ROOT.'cart/'.$row['FrameID'].'" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
            </ul>
            
        </div>
@@ -89,8 +89,8 @@ if(isset($_POST["action"]))
            <h3 class="title"><a href="#">' . $row['FrameDescription'] . '</a></h3>
            <div class="price">' . $row['FramePrice'] . ' EGP</div>
            <form method="post" >
-            <input type="submit" name="addToCart-Gallery" class="add-to-cart" value="Add to Cart">
-            <input type="hidden" name="desc" value="'. $row['FrameDescription'] .'">
+           <a href="'.ROOT.'cart/'.$row['FrameID'].'" data-tip="Add to Cart" class="add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a></li>
+           
            </form>
           
        </div>

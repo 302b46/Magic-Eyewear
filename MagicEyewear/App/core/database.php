@@ -113,30 +113,40 @@ public function write($query, $data=[])
       return $this->stmt->fetchAll(PDO::FETCH_OBJ);
       }
 
-      /* Admin Side */
-    public function CountUsers($query) 
+    //Update data in database
+    public function updateClient($query, $data=[])
     {
         $database = $this->database_connection(); 
-        $statement = $database->prepare($query);
-        $statement->execute();
-        $count= $statement->rowCount();
-      
-        return $count;
-    }
-    public function View($query) {
-        $database = $this->database_connection(); 
-        $statement = $database ->query($query);
-        return $statement; 
-    } 
-    public function AddFrames($query,$arrayf) {
-      $database = $this->database_connection(); 
-      $statement = $database ->prepare($query);
-      $statement ->execute($arrayf);
-      return $statement;
-    } 
+        $statement = $database->prepare($query); //database statement
     
-  
+        if(count($data)==0)
+        {
+          $statement = $database->query($query); 
+          $check = 0; 
+          
+          if($statement)
+          {
+            $check = 1;  
+          }
+        
+        }//End of if count
     
+        else
+        {
+          $check = $statement->execute($data); 
+        }
+    
+        if($check)
+        {
+          return true;
+        }
+        else
+        {
+          return false;
+        }
+    
+      }
+
 } // End of class
 
 ?>
