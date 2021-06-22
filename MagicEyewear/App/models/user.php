@@ -128,7 +128,7 @@ class User
     {
         $database = new Database();
 
-        if ($_SESSION['userType']==2){
+        
             if(isset($POST['save'])){
 
                 $editProfileArr['firstname'] = $POST['firstname'];
@@ -139,9 +139,17 @@ class User
 
                 $editProfileQuery= "UPDATE user SET FirstName=:firstname, LastName=:lastname WHERE UserID='$_SESSION[userID]'";
                 
-                $userData = $database->write($editProfileQuery, $editProfileArr);
+                $userData = $database->updateClient($editProfileQuery, $editProfileArr);
+                if($userData) 
+            {
+                header("Refresh:0");
+                die;
             }
-        }
+            else{
+                echo "Error";
+            }
+            }
+        
     }
 
 

@@ -1,4 +1,4 @@
-<?php $this->view("includes/header",$data);?>
+
 
 <html lang="en">
 <head>
@@ -47,7 +47,7 @@
           <!-- Beginning of tab Edit Profile -->
 
                 <div class="tab-pane active" id="edit">
-                  <form class="form" action="">
+                  <form class="form" method="post">
                     <div class="row">
                       <div class="col">
                         <div class="row">
