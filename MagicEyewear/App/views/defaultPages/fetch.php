@@ -5,7 +5,7 @@
  $dbname = "magic_eyewear";  
 
  $connect = new PDO("mysql:host=$host; dbname=$dbname", $db_user, $db_pass); 
- $connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
+ //$connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 
  //Database Connection
 
@@ -21,10 +21,24 @@ if(isset($_POST["action"]))
     ";
     $and_v = " AND ";
   }
+  if(isset($_POST["gender"]))
+  {
+    $gender_filter = implode("','", $_POST["gender"]); //convert from array to string
+    $query .= $and_v." AssignedGender IN(SELECT GenderID FROM gender WHERE GenderType IN( '".$gender_filter."'))
+    ";
+    $and_v = " AND ";
+  }
+  if(isset($_POST["frametype"]))
+  {
+    $frametype_filter = implode("','", $_POST["frametype"]); //convert from array to string
+    $query .= $and_v." FrameType IN(SELECT FrameTypeID FROM frametype WHERE TypeName IN( '".$frametype_filter."'))
+    ";
+    $and_v = " AND ";
+  }
   if(isset($_POST["brand"]))
   {
     $brand_filter = implode("','", $_POST["brand"]); //convert from array to string
-    $query .= $and_v." FrameBrand IN('".$brand_filter."') 
+    $query .= $and_v." FrameBrand IN(SELECT BrandID FROM brand WHERE BrandName IN( '".$brand_filter."'))
     ";
     $and_v = " AND ";
   }
@@ -36,14 +50,15 @@ if(isset($_POST["action"]))
     $and_v = " AND ";
 
   }
-  if(isset($_POST["FrameShape"]))
+  if(isset($_POST["frameshape"]))
   {
-    $FrameShape_filter = implode("','", $_POST["FrameShape"]);
-    $query .= $and_v." FrameShape IN('".$FrameShape_filter."')
+    $FrameShape_filter = implode("','", $_POST["frameshape"]);
+    $query .= $and_v." FrameShape IN(SELECT FrameShapeID FROM frameshape WHERE FrameShapeName IN('".$FrameShape_filter."'))
     ";
     $and_v = " AND ";
 
   }
+
 
   $statement = $connect->prepare($query);
   $statement->execute();
@@ -60,7 +75,7 @@ if(isset($_POST["action"]))
        <div class="product-image4">
            <a href="#">
                <img class="pic-1" src="'. $row['FrameImage'] .'">
-               <img class="pic-2" src="https://www.freepnglogos.com/uploads/glasses-png/glasses-png-products-wisconsin-vision-20.png">
+               <img class="pic-2" src="https://i.ibb.co/z2BxJ2D/frame123.jpg">
            </a>
            <ul class="social">
                <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
@@ -78,9 +93,10 @@ if(isset($_POST["action"]))
 </div>';
         }
     } else {
-        $output = '<h3>No Data Found</h3>';
+        $output = '<h3>No Frames Found</h3>';
     }
     echo $output;
+    //echo $query;
 }
 
 ?>
