@@ -226,7 +226,7 @@
        
             <li class="nav-item"><a href="<?=ROOT?>aboutus" class="nav-link  text-capitalize">About Us</a></li>
             <li class="nav-item">
-          <a class="nav-link" href="<?=ROOT?>tryon"  data-toggle="tooltip" title="A Surprise Is Waiting For You...">Click Me</a>
+            <i class="fa fa-glasses"></i><a class="nav-link" href="<?=ROOT?>tryon"  data-toggle="tooltip" title="A Surprise Is Waiting For You..."> Click Me</a>
         </li>
         </ul>
         
