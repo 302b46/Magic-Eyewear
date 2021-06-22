@@ -6,10 +6,12 @@ class Filter {
     public $colors=array();
     
 
-    function FilterFrames($FilterType,$filterName)
+    function FilterByFrames($FrameType,$filterName)
     {
         $database = new Database();
-        $this->database->query("SELECT * FROM frame where FilterType='$FilterType' ");
+        if($filterName == "frametype"){
+            $this->database->query("SELECT * FROM frame f, frametype t where f.FrameType = t.FrameTypeID  AND t.TypeName='".$FrameType."' ");
+        }
         return $this->database->resultSet();
     }
 

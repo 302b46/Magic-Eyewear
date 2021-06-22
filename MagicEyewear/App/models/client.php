@@ -4,14 +4,10 @@ class Client extends User
 {
     function addToCart()
     {
-        
+        $database = new Database();
     }
 
-    function editProfile()
-    {
-        
-    }
-
+   
 }
 
 
