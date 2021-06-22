@@ -54,7 +54,7 @@ $output='';
 
 		$output .=' 
 		<div class="categories">
-			<a href="" target="_blank" class="image-title"> 
+			<a href="./Products" target="_blank" class="image-title"> 
 			<img src="'.$row->BrandImg.'"  class="image-item"/>
 		</div>';
 
