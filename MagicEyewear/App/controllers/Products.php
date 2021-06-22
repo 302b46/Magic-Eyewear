@@ -9,6 +9,8 @@ class Products extends Controller
         $this->view("defaultPages/filter",$data);
 
     }
+
+    
 }
 
 ?>

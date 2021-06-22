@@ -74,7 +74,9 @@
                 <div class="text-box">
                   <h2>Our Stores:</h2>
                   <p>
-                    We currently only exist inside of EyeCare Center in Maadi. Come visit us! <a href="https://www.google.com/maps/dir//eyecare+center/@29.9592447,31.2521494,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x14584715f4f5825d:0x460b31b30854aa5e!2m2!1d31.2604238!2d29.9633895">Show Me The Way!</a>
+                    We currently only exist inside of EyeCare Center in Maadi. Come visit us! 
+                    <br>
+                    <i class="fa fa-car"></i><a style="text-decoration:none;" href="https://www.google.com/maps/dir//eyecare+center/@29.9592447,31.2521494,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x14584715f4f5825d:0x460b31b30854aa5e!2m2!1d31.2604238!2d29.9633895">&nbsp;Show Me The Way!</a>
                   </p>
                   
                 </div>
