@@ -70,7 +70,7 @@
 
     <h3>Recommended Frame Shape:</h3>
     <h5>The Cat-Eye</h5>
-    <a href="" class="button">Shop Now</a>
+    <a href="<?=ROOT?>products" class="button">Shop Now</a>
 
     </div>
     
@@ -94,7 +94,7 @@
 
     <h3>Recommended Frame Shape:</h3>
     <h5>Geometric shapes (square or rectangular)</h5>
-    <a href="" class="button">Shop Now</a>
+    <a href="<?=ROOT?>products" class="button">Shop Now</a>
 
 </div>
   </section>
@@ -115,7 +115,7 @@
 
     <h3>Recommended Frame Shape:</h3>
     <h5>Rectangular</h5>
-    <a href="" class="button">Shop Now</a>
+    <a href="<?=ROOT?>products" class="button">Shop Now</a>
 
 </div>
   </section>
@@ -135,7 +135,7 @@
 
     <h3>Recommended Frame Shape:</h3>
     <h5>Round or oval</h5>
-    <a href="" class="button">Shop Now</a>
+    <a href="<?=ROOT?>products" class="button">Shop Now</a>
 
 </div>
   </section>
@@ -154,7 +154,7 @@
 
     <h3>Recommended Frame Shape:</h3>
     <h5>Aviators or Cat-Eye</h5>
-    <a href="" class="button">Shop Now</a>
+    <a href="<?=ROOT?>products" class="button">Shop Now</a>
 
     <button></button>
 </div>
