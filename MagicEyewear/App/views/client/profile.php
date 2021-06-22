@@ -1,4 +1,4 @@
-<?php $this->view("includes/header",$data);?>
+<?php  $this->view("includes/header",$data);?>   
 
 <html lang="en">
 <head>
@@ -13,7 +13,7 @@
 </head>
 <body>
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-<div class="container" style="margin-top:120px;">
+<div class="container" style="margin-top:150px;margin-bottom:50px;">
 <div class="row flex-lg-nowrap">
   
 
@@ -33,7 +33,7 @@
                   
                 </div>
               </div>
-              <div class="portlet-body">
+              <div class="portlet-body" >
                 <div>
               <!-- Nav Tabs -->
               <ul class="nav nav-tabs" role="tablist">
@@ -47,7 +47,7 @@
           <!-- Beginning of tab Edit Profile -->
 
                 <div class="tab-pane active" id="edit">
-                  <form class="form" action="">
+                  <form class="form" method="post">
                     <div class="row">
                       <div class="col">
                         <div class="row">
@@ -150,7 +150,7 @@
 
 
                 <!-- Beginning of tab Order History -->
-                <div class="tab-pane" id="history">
+                <div class="tab-pane" id="history" >
                   <h2>Order History</h2>
                 </div>
                 <!-- End of tab Order History -->

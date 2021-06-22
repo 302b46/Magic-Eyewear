@@ -4,6 +4,7 @@
 
 <!-- Contains editing admin credentials -->
 
+<?php    $pdo = new PDO("mysql:host=localhost;dbname=magic_eyewear","root","");  ?>
 <html>
 <body>
 
@@ -33,16 +34,13 @@
 								<ul>
 									<li>
 										<span style="color:#1b98e0;">Name:</span>
-										<span style="color:#13293d;">Samiha Hussien<span>
+										<span style="color:#13293d;"><?php echo $_SESSION['firstName']; echo "&nbsp;"; echo $_SESSION['lastName'];?><span>
 									</li>
 									<li>
 									<span style="color:#1b98e0;">Email Address:</span>
-									<span style="color:#13293d;">samihahussien@gmail.com<span>
+									<span style="color:#13293d;"><?php echo $_SESSION['email'];  ?><span>
 									</li>
-									<li>
-										<span style="color:#1b98e0;">Phone Number:</span>
-										<span style="color:#13293d;">01233697445<span>
-									</li>
+									
 									
 								
 								</ul>
@@ -81,17 +79,10 @@
 														<li class="weight-500 col-md-6">
 															<br><br>
 															
-															<div class="form-group">
-																<label class="editadmin">Mobile Number</label>
-																<input class="form-control form-control-lg date-picker" name="mobile" type="text">
-															</div>
-															<div class="form-group">
-																<label class="editadmin">Username</label>
-																<input class="form-control form-control-lg" name="username" type="text">
-															</div>
+															
 															<div class="form-group">
 																<label class="editadmin">Password</label>
-																<input class="form-control form-control-lg" name="password" type="email">
+																<input class="form-control form-control-lg" name="password" type="password">
 															</div>
 															<input type="submit" class="button save" name="savebtn" value="Save changes">  <!-- To be edited with the form -->
 
@@ -99,6 +90,17 @@
 														</li>
 													</ul>
 												</form>
+												<?php 
+													if(isset($_POST["savebtn"])){
+															$fname = $_POST["firstname"];
+															$lname = $_POST["lastname"];
+															$email = $_POST["email"];
+															$pass = $_POST["password"];
+															$sql="UPDATE user SET FirstName='$fname',LastName='$lname',Email='$email',
+															Password='$pass' WHERE UserID=3 ";
+
+													}
+												?>
 											</div>
 										</div>
 										<!-- Setting Tab End -->

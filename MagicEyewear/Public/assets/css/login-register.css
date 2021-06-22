@@ -17,7 +17,6 @@ body {
 }
 
 
-
 h2 {
 	text-align: center;
 }
@@ -37,6 +36,9 @@ a {
 	margin: 15px 0;
 }
 
+.website{
+	color:white; 
+}
 .website:hover{
 	text-decoration:underline;
 
@@ -95,8 +97,8 @@ input {
 	position: relative;
 	overflow: hidden;
 	width: 768px;
-	max-width: 100%;
-	min-height: 480px;
+	max-width: 1800px;
+	min-height: 600px;
 }
 
 .form-container {

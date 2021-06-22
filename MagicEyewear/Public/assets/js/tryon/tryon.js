@@ -261,7 +261,9 @@ $(window).load(function () {
         outside: {
             left: 'https://i.ibb.co/JKr5VzY/left.png',
             right: 'https://i.ibb.co/VCxYrCB/right.png',
-            front: 'https://i.ibb.co/kMn2mSx/front.png'
+            front: 'https://i.ibb.co/TkdhGqn/front.png'
+
+            // front: 'https://i.ibb.co/kMn2mSx/front.png'
         }
     };
 

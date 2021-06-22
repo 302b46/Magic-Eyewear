@@ -2,7 +2,6 @@
 <br><br>
 <html>
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -77,9 +76,7 @@
 <p class="mb-2 text-muted text-uppercase small">Sunglasses</p>
 
 <p><span class="mr-1"><strong>1,500 EGP</strong></span></p>
-<p class="pt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, sapiente illo. Sit
-  error voluptas repellat rerum quidem, soluta enim perferendis voluptates laboriosam. Distinctio,
-  officia quis dolore quos sapiente tempore alias.</p>
+<p class="pt-1"><?=$_POST['desc']?></p>
 <div class="table-responsive">
   <table class="table table-sm table-borderless mb-0">
     <tbody>

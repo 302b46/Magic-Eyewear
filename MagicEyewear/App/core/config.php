@@ -29,6 +29,7 @@ define('ROOT', str_replace("App/core", "public", $path));
 // Path to public assets folder
 define('ASSETS', str_replace("App/core", "public/assets", $path));
 
+
 /*set to true to allow error reporting
 set to false when you upload online to stop error reporting*/
 
