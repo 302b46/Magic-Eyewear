@@ -76,7 +76,7 @@
 <p class="mb-2 text-muted text-uppercase small">Sunglasses</p>
 
 <p><span class="mr-1"><strong>1,500 EGP</strong></span></p>
-<p class="pt-1"><?=$_POST['desc']?></p>
+<p class="pt-1"><?=$data['post']->FrameDescription?></p>
 <div class="table-responsive">
   <table class="table table-sm table-borderless mb-0">
     <tbody>
