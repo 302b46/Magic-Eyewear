@@ -1,6 +1,6 @@
 <?php
-class Filter {
-    public $brandName=isset($_GET['brandname']);
+class FilterBy {
+    public $brandName;//=isset($_GET['brandname']);
     public $Gender;
     public $FrameType;
     public $colors=array();
@@ -17,10 +17,17 @@ class Filter {
 
    function ViewAllBrands()
     { 
-        $database = new Database();
-        $query = "SELECT DISTINCT(BrandImage) FROM brand";
-        $res = $database->query($query);
-        return $this->database->resultSet();
+        $query = "select BrandImg from brand";
+
+		$database = new Database();
+		$data = $database->read($query);
+		if(is_array($data))
+		{
+			return $data;
+		}
+
+		return false;
+                    
     } 
 
 
