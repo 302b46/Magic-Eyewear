@@ -1,12 +1,12 @@
 
 .saveChanges {
-    width: 160px;
+    width: 165px;
     height: 45px;
     font-family: Tahoma, Verdana, Segoe, sans-serif;
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 2.5px;
-    font-weight: 500;
+    font-weight: 600;
     color: #fff;
     background-color: #13293D;
     border: none;
@@ -84,3 +84,60 @@
   .close:focus{
     outline:none;
 }
+
+.changePass {
+  width: 165px;
+  height: 45px;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 600;
+  color: #13293D;
+  background-color: #CFE8EF;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(19, 41, 61, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+
+  }
+
+.changePass:hover {
+  background-color: #1B98E0;
+  box-shadow: 0px 15px 20px rgba(27, 152, 224, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+.changePass:focus{
+    outline:none;
+}
+
+.resetBtn {
+  width: 100px;
+  height: 45px;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #6D7E88;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(19, 41, 61, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  }
+
+.resetBtn:hover {
+  background-color: #CFE8EF;
+  box-shadow: 0px 15px 20px rgba(239, 207, 232, 0.2);
+  color: #000;
+}
+.resetBtn:focus{
+  outline:none;
+}
+

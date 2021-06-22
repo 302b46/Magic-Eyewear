@@ -1,6 +1,5 @@
 <html>
-<head>
-	<title>shop by brand</title>
+<title><?=$data['page_title'] . " | " . WEBSITE_TITLE?></title>
 <link rel="stylesheet" href="<?=ASSETS?>css/brand.css">
 
 </head>
@@ -12,6 +11,11 @@
 </center>
 
 <?php
+
+
+
+//echo $this->model("models/Filters",$output);
+
 /*
 echo $this->model->ViewAllBrands();
 $str = '';
@@ -29,6 +33,21 @@ foreach($result as $row)
     	echo $row['BrandImage'];
 		echo "<br>";
     }
+
+$model= new Filter;
+$model->ViewAllBrands()->execute();
+$result = $statement->fetchAll();
+foreach($result as $row)
+{
+$output .= '
+<div class="content">
+<div class="categories">
+	<a href="" target="_blank" class="image-title">
+	<img src="<?=ASSETS?>images/'.$row['BrandImage'].'" class="image-item"/>
+</div>
+';
+}
+echo $output;
 */
 ?>
  
