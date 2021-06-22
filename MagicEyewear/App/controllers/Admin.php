@@ -8,6 +8,12 @@ class Admin extends Controller
     function index()
     {
         $data['page_title'] = "Admin";
+
+        $users = $this->loadModel("AdminModel"); 
+
+        $users->userCount(); 
+        //add function add, edit and delete 
+
         $this->view("Admin/AdminHomepage",$data);
 
     }

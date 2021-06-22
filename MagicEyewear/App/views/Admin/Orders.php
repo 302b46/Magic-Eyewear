@@ -1,7 +1,10 @@
 <?php  $this->view("includes/AdminDashboard",$data);?> 
 
+
 <html>
 <body>
+
+<?php    $pdo = new PDO("mysql:host=localhost;dbname=magic_eyewear","root","");  ?>
 
 <div class="main-container">
         
@@ -15,7 +18,7 @@
     
         <thead>
             <tr>
-                <th>Model Name</th>
+                
                 <th>OrderID</th>
                 <th>ClientID</th>
                 <th>Frame Id</th>
@@ -25,20 +28,20 @@
         </thead>
         <tbody>
             <tr>
-                <td>Rayban 15</td>
-                <td>703</td>
-                <td>7899</td>
-                <td>7886</td>
-                <td>6000</td>
+            <?php 
+                $query = "SELECT * from ordercart";
+                $d =$pdo -> query($query);
+                foreach($d as $data){
+            ?>
+                
+                <td><?php echo $data["OrderID"]; ?></td>
+                <td><?php echo $data["ClientID"]; ?></td>
+                <td><?php echo $data["FrameID"]; ?></td>
+                <td><?php echo $data["TotalPrice"]; ?></td>
                 
             </tr>
-            <tr>
-            <td>Tommy Hilfiger 50</td>
-                <td>809</td>
-                <td>7800</td>
-                <td>3662</td>
-                <td>5500</td>
-                </tr>
+            <?php  } ?>
+            
         </tbody>
     </table>
         </div>

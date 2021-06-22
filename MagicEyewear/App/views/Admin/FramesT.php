@@ -1,55 +1,32 @@
-<?php  $this->view("includes/AdminDashboard",$data);?> 
-
-<!-- Contains Frames and its functions (Add,Modify,Delete) -->
-
-<?php    $pdo = new PDO("mysql:host=localhost;dbname=magic_eyewear","root","");  ?>
-
 <html>
 <body>
 
-
 <div class="main-container">
-        
-        <div class="pd-ltr-20">
-            <div class="card-box pd-20 height-50-p mb-30">
-                <h3> Frames </h3><br>
-                            <form method="post">
-							<div class="btn-list">
-								<a class=" btn-primary" data-toggle="modal" href="#" data-target="#AddFrame" type="button"><button id="add" class="button button1" >Add</button></a>
-								<a class=" btn-primary" data-toggle="modal" href="#" data-target="#EditFrame" type="button"><button id="add" class="button button1" >Edit</button></a>
-                                <a class=" btn-primary" data-toggle="modal" href="#" data-target="#confirmation-modal" type="button"><button id="add" class="button delete" >Delete</button></a>
-								
-							</div>
-                            </form>
-        
-        
-      <!-- Add Frame -->
-			<div class="col-md-4 col-sm-12 mb-30">
-							<div class="modal fade bs-example-modal-lg" id="AddFrame" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-								<div class="modal-dialog modal-lg modal-dialog-centered">
-									<div class="modal-content">
-										<div class="modal-header">
-                                        
-											<h4 class="modal-title" id="myLargeModalLabel">Add Frame</h4>
+
+    <div class="pd-ltr-20">
+        <div class="card-box pd-20 height-50-p mb-30">
+            <h3> Frames </h3><br>
+                <form method="post">
+					<div class="btn-list">
+                        <a class=" btn-primary" data-toggle="modal" href="#" data-target="#AddFrame" type="button"><button id="add" class="button button1" >Add</button></a>
+                        <a class=" btn-primary" data-toggle="modal" href="#" data-target="#EditFrame" type="button"><button id="add" class="button button1" >Edit</button></a>
+                        <a class=" btn-primary" data-toggle="modal" href="#" data-target="#confirmation-modal" type="button"><button id="add" class="button delete" >Delete</button></a>
+                        
+					</div>
+                </form>
+
+            <div class="col-md-4 col-sm-12 mb-30">
+                    <div class="modal fade bs-example-modal-lg" id="AddFrame" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h4 class="modal-title" id="myLargeModalLabel">Add Frame</h4>
 											<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-										</div>
-                                        <form method="post">
+								</div>
+                                    <form method="post">
                                             <div class="modal-body">
                                             <input type="text" class="form-control form-control-lg" placeholder="Code" name="code"> <br>
-                                            <select class="form-control form-control-lg" name="brandname">
-                                                        <option selected="">Brand Name</option>
-                                                        <option value="1">ARMANI EXCHANGE</option>
-                                                        <option value="2">Tommy Hilfiger</option>
-                                                        <option value="2">Polaroid</option>
-                                                        <option value="2">HUGO</option>
-                                                        <option value="2">SEVENTH STREET</option>
-                                                        <option value="2">Pierre Cardin</option>
-                                                        <option value="2">RAY BAN</option>
-                                                        <option value="2">Ralph Lauren</option>
-                                                        <option value="2">Diva</option>
-                                            </select> <br>
-                                            
-                                            
+                                            <input type="text" class="form-control form-control-lg" placeholder="Brand Name" name="brandname"> <br>
                                             <select class="form-control form-control-lg" name="rim">
                                                         <option selected="">Rim</option>
                                                         <option value="1">Full Rim</option>
@@ -108,52 +85,13 @@
                                                 <button type="button" class="button delete" data-dismiss="modal">Close</button>
                                                 <input type="submit" class="button save" value="Save changes" name="submitAddFrame">  <!-- To be edited with the form -->
                                         </form>
-										</div>
-									</div>
-								</div>
-							</div>
-                            <?php 
-                                    // Insert User
-                                    if(isset($_POST["submitAddFrame"])){
-                                        $code = $_POST["code"];
-                                        $brandname = $_POST["brandname"];
-                                        $rim = $_POST["rim"];
-                                        $size= $_POST["size"];
-                                        $color = $_POST["color"];
-                                        $shape = $_POST["shape"];
-                                        $material = $_POST["material"];
-                                        $price = $_POST["price"];
-                                        $gender = $_POST["gender"];
-                                        $type =$_POST["type"];
-                                        $img = $_POST["image"];
-                                        $desc =$_POST["desc"];
-                                        $sql = "INSERT into frame(FrameCode,FrameType,FrameBrand,FrameDescription,FrameColor,
-                                        FrameRim,FrimMaterial,AssignedGender,FrameSize,FrameImage,FrameShape,FramePrice)
-                                        VALUES(:fc,:ft,:fb,:fd,:fcl,:fr,:fm,:fg,:fs,:fi,:fsh,:fp)";
-                                        $data = [
-                                            'fc' => $code,
-                                            'ft' => $type,
-                                            'fb' => $brandname,
-                                            'fd' =>$desc,
-                                            'fcl' => $color,
-                                            'fr' => $rim,
-                                            'fm' => $material,
-                                            'fg' => $gender,
-                                            'fs' => $size,
-                                            'fi' => $img,
-                                            'fsh' => $shape,
-                                            'fp' => $price,
-                                        ];
-                                        $r = $pdo->prepare($sql);
-                                        $r ->execute($data);
-                                    }
-                                ?>
-            </div>
-
-                             
-                            
-        <!-- Edit Modal -->
-                    <div class="modal fade bs-example-modal-lg" id="EditFrame" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                        </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                <!-- Edit Modal -->
+                <div class="modal fade bs-example-modal-lg" id="EditFrame" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-lg modal-dialog-centered">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -246,8 +184,8 @@
 
                         </div>
                     </div>
-        <!-- Delete Confirmation Modal -->
-                    <div class="col-md-4 col-sm-12 mb-30">
+                <!-- Delete Confirmation Modal -->
+                <div class="col-md-4 col-sm-12 mb-30">
 							<div class="modal fade" id="confirmation-modal" tabindex="-1" role="dialog" aria-hidden="true">
 								<div class="modal-dialog modal-dialog-centered" role="document">
 									<div class="modal-content">
@@ -269,65 +207,66 @@
 							</div>
 						
 					</div>
-
-			    
                     <table class="styled-table">
     
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>Code</th>
-            <th>Type</th>
-            <th>Brand</th>
-            <th>Color</th>
-            <th>Rim</th>
-            <th>Material</th>
-            <th>Gender</th>
-            <th>Size</th>
-            <th>Price</th>
-            <th>Shape</th>
-            <th>Description</th>
-            <th>Image</th> 
-            <th></th>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Code</th>
+                <th>Type</th>
+                <th>Brand</th>
+                <th>Color</th>
+                <th>Rim</th>
+                <th>Material</th>
+                <th>Gender</th>
+                <th>Size</th>
+                <th>Price</th>
+                <th>Shape</th>
+                <th>Description</th>
+                <th>Image</th> 
+                <th></th>
+                
+            </tr>
+        </thead>
+        <tbody>
+               
+                <?php $query = "SELECT * from frame";
+                $d =$pdo -> query($query);
+                foreach($d as $data){ ?> 
+                 <form method="post">
+                <th><?php echo $data['FrameID']; ?></th>
+                <th><?php echo $data['FrameCode'] ; ?></th>
+                <th><?php echo $data['FrameType'] ; ?></th>
+                <th><?php echo $data['FrameBrand'] ; ?></th>
+                <th><?php echo  $data['FrameColor']?></th>
+                <th><?php echo  $data['FrameRim'] ; ?></th>
+                <th><?php echo  $data['FrameMaterial']  ; ?></th>
+                <th><?php echo  $data['AssignedGender'] ; ?></th>
+                <th><?php echo  $data['FrameSize'] ; ?></th>
+                <th><?php echo  $data['FramePrice']  ; ?></th>
+                <th><?php echo  $data['FrameShape'] ; ?></th>
+                <th><?php echo  $data['FrameDescription'] ; ?></th>
+                <th><?php echo  $data['FrameImage'] ; ?></th>
+                <th><input type="checkbox" id="check" name="checkframe" ></th> 
+                <?php  } ?>
+                </form>
+            <tr> 
             
-        </tr>
-    </thead>
-    <tbody>
-           
-            <?php $query = "SELECT * from frame";
-            $d =$pdo -> query($query);
-            foreach($d as $data){ ?> 
-             <form method="post">
-            <th><?php echo $data['FrameID']; ?></th>
-            <th><?php echo $data['FrameCode'] ; ?></th>
-            <th><?php echo $data['FrameType'] ; ?></th>
-            <th><?php echo $data['FrameBrand'] ; ?></th>
-            <th><?php echo  $data['FrameColor']?></th>
-            <th><?php echo  $data['FrameRim'] ; ?></th>
-            <th><?php echo  $data['FrameMaterial']  ; ?></th>
-            <th><?php echo  $data['AssignedGender'] ; ?></th>
-            <th><?php echo  $data['FrameSize'] ; ?></th>
-            <th><?php echo  $data['FramePrice']  ; ?></th>
-            <th><?php echo  $data['FrameShape'] ; ?></th>
-            <th><?php echo  $data['FrameDescription'] ; ?></th>
-            <th><?php echo  $data['FrameImage'] ; ?></th>
-            <th><input type="checkbox" id="check" name="checkframe" ></th> 
-            <?php  } ?>
-            </form>
-        <tr> 
-        
-        </tr>
-     
-        
+            </tr>
             
-        
+        </tbody>
+        </table>
 
-    </div>
-    </div>
-        
+
+
+
+            </div>
+
+
+
+
+
 </div>
-
-
 
 </body>
 </html>

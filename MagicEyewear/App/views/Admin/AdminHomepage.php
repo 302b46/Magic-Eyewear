@@ -17,7 +17,10 @@
                         </div>
                         <div class="col-md-8">
                             <h4 class="font-20 weight-500 mb-10 text-capitalize">
-                                <span style="color:#1b98e0;">Welcome back </span> <div class="weight-600 font-30 text-blue " style="color:#13293d;"><?php echo $_SESSION['firstName'];?></div>
+                                <span style="color:#1b98e0;">Welcome back </span> 
+									<div class="weight-600 font-30 text-blue " style="color:#13293d;">
+										<?php echo $_SESSION['firstName']; echo "&nbsp;"; echo $_SESSION['lastName']; ?>
+									</div>
                             </h4>
                             
                         </div>
@@ -30,7 +33,12 @@
                     <br><div class="d-flex flex-wrap align-items-center">
 						
                         &nbsp; &nbsp;<i class="fa fas fa-users" style="font-size:30px; color:#1b98e0;"></i> &nbsp; &nbsp;
-							<div class="h4 mb-0"><h6 class="emp"  >50 Users</h6></div> <!-- Read from database -->
+							<div class="h4 mb-0">
+							<from ="post">
+							<h6 class="emp" name="usersCount"> <?php echo $_SESSION['usersCount']; ?> Users </h6>
+							
+							</form>
+							</div> <!-- Read from database -->
 							
 						</div>
 					</div>
@@ -44,16 +52,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-xl-3 mb-30">
-					<div class="card-box height-100-p widget-style1" style="text-align: center;">
-						<br><div class="d-flex flex-wrap align-items-center">
-							
-							&nbsp; &nbsp;<i class="fas fa-user-circle" style="font-size:30px; color:#1b98e0;"></i> &nbsp; &nbsp;
-								<div class="h4 mb-0"><h6 class="emp"  >350 Visitors</h6></div> <!-- Read from Google analytics -->
-								
-						</div>
-					</div>
-				</div>
+				
 				
 			</div>
 

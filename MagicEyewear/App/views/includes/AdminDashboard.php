@@ -11,11 +11,11 @@
 <html>
 <head>
 
+	
     <!-- Basic Page Info -->
 	<meta charset="utf-8">
 	<title>Admin Dashboard</title>
 
-	
 	<!-- Load an icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
@@ -34,11 +34,13 @@
 <body>
 
     <div class="header">
-        <div class="header-left"></div>
+        <div class="header-left">
+			<a href="<?=ROOT?>logout" style="padding-left:50px;" ><button type="submit" style="width:100px; "> Sign out </button></a>
+		</div>
         <div class="header-right" style="padding-top:25px; padding-right:30px;">
             
             <a style="color:#0b132b;" class="dropdown-toggle no-arrow" href="<?=ROOT?>AdminProfile" role="button" 
-			><h6>Samiha Hussien</h6></a>
+			><h6><?php echo $_SESSION['firstName']; echo "&nbsp;"; echo $_SESSION['lastName']; ?></h6></a>
                   
             
         </div>

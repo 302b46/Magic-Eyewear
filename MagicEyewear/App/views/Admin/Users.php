@@ -4,7 +4,7 @@
 
 <html>
 <body>
-
+<?php    $pdo = new PDO("mysql:host=localhost;dbname=magic_eyewear","root","");  ?>
 
 <div class="main-container">
         
@@ -14,7 +14,7 @@
                 <form method="post">
                     <div class="btn-list">
                         <a class=" btn-primary" data-toggle="modal" href="#" data-target="#AddUser" type="button"><button id="add" class="button button1" >Add</button></a>
-                        <a class=" btn-primary" data-toggle="modal" href="#" data-target="#confirmation-modal" type="button"><button id="add" class="button delete" >Delete</button></a>
+                        
                         
                     </div>
                 </form>
@@ -29,21 +29,48 @@
 										</div>
                                         <form method="post">
                                     <div class="modal-body">
-                                    <input type="text" class="form-control form-control-lg" placeholder="Username" name="username"> <br>
+                                    
                                     <input type="text" class="form-control form-control-lg" placeholder="First Name" name="firstname"> <br>
                                     
                                     <input type="text" class="form-control form-control-lg" placeholder="Last Name" name="lastname"> <br>
                                     
-                                    
+                                    <input type="text" class="form-control form-control-lg" placeholder="Password" name="pass"> <br> 
                                    
                                     <input type="text" class="form-control form-control-lg" placeholder="Email" name="email"> <br>
+                                    <select class="form-control form-control-lg" name="usertype">
+                                                        <option selected="">User Type</option>
+                                                        <option value="1">Admin</option>
+                                                        <option value="2">Client</option>
+                                                        
+                                            </select> <br>
                                     
-                                    <input type="text" class="form-control form-control-lg" placeholder="Mobile Number" name="mobilenumber"> <br>
                                     </div>
                                     <div class="modal-footer">
                                     <button type="button" class="button delete" data-dismiss="modal">Close</button>
-                                                <input type="submit" class="button save" value="Save changes">  <!-- To be edited with the form -->
+                                                <input type="submit" name="adduser" class="button save" value="Save changes">  <!-- To be edited with the form -->
                                 </form>
+                                <?php 
+                                    // Insert User
+                                    if(isset($_POST["adduser"])){
+                                        $fname = $_POST["firstname"];
+                                        $lname = $_POST["lastname"];
+                                        $email = $_POST["email"];
+                                        $usertype = $_POST["usertype"];
+                                        $pass=$_POST["pass"];
+                                        $sql = "INSERT into user(FirstName,LastName,Email,Password,UserType)
+                                        VALUES(:f,:l,:e,:p,:u)";
+                                        $data = [
+                                            'f' => $fname,
+                                            'l' => $lname,
+                                            'e' => $email,
+                                            'p' =>$pass,
+                                            'u' => $usertype,
+                                        ];
+                                        $r = $pdo->prepare($sql);
+                                        $r ->execute($data);
+                                    }
+                                ?>
+                                
 										</div>
 									</div>
 								</div>
@@ -77,35 +104,43 @@
         <thead>
             <tr>
                 <th>ID</th>
-                <th>Username</th>
+                
                 <th>First Name</th>
                 <th>Last Name</th>
                 <th>Email</th>
-                <th>Mobile Number</th>
-                <th></th>
+                <th>Password</th>
+                <th>User Type</th>
+                <th>Delete</th>
                 
             </tr>
         </thead>
         <tbody>
+            <?php 
+                $query = "SELECT * from user";
+                $d =$pdo -> query($query);
+                foreach($d as $data){
+            ?>
             <tr>
-                <td>7899</td>
-                <td>Ahmed123</td>
-                <td>Ahmed</td>
-                <td>Yasser</td>
-                <td>AhmedY123@yahoo.com</td>
-                <td>01032664890</td>
-                <td><input type="checkbox" id="check" name="checkframe" ></td>
-                
+                <td><?php echo $data["UserID"] ?></td>
+                <td><?php echo $data["FirstName"]; ?></td>
+                <td><?php echo $data["LastName"]; ?></td>
+                <td><?php echo $data["Email"] ?></td>
+                <td><?php echo $data["Password"] ?></td>
+                <td><?php 
+                if($data["UserType"]  ==2) echo "Client";
+                else echo "Admin"; ?></td>
+                <td><input type="submit" id="<?php echo $data['UserID'];?>" name="delete" value="delete"></a></td>
             </tr>
-            <tr>
-                <td>7800</td>
-                <td>Malak11</td>
-                <td>Malak</td>
-                <td>Abdallah</td>
-                <td>Malak_Abdallah@yahoo.com</td>
-                <td>01137644100</td>
-                <td><input type="checkbox" id="check" name="checkframe" ></td>
-            </tr>
+            <?php } ?>
+            <?php
+                if(isset($_POST["delete"])){
+                    $id = $_POST["UserID"];
+                    //$sql = "DELETE from user WHERE UserID=.$id.";
+                    $count=$dbo->prepare("DELETE FROM user WHERE id=:id");
+                    $count->bindParam(":id",$id,PDO::PARAM_INT);
+                    $count->execute();
+                }
+            ?>
         </tbody>
     </table>
         </div>
