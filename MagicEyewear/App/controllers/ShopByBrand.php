@@ -5,7 +5,7 @@ class ShopByBrand extends Controller
     //Shows page
     function index()
     {
-        $data['page_title'] = "brands";
+        $data['page_title'] = "Brands";
         $this->view("defaultPages/brands",$data);
         
     }

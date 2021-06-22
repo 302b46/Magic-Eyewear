@@ -1,6 +1,5 @@
 <html>
-<head>
-	<title>shop by brand</title>
+<title><?=$data['page_title'] . " | " . WEBSITE_TITLE?></title>
 <link rel="stylesheet" href="<?=ASSETS?>css/brand.css">
 
 </head>
