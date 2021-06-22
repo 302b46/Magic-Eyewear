@@ -75,10 +75,12 @@ if(isset($_POST["action"]))
        <div class="product-image4">
            <a href="#">
                <img class="pic-1" src="'. $row['FrameImage'] .'">
-               <img class="pic-2" src="https://i.ibb.co/z2BxJ2D/frame123.jpg">
+
+               <img class="pic-2" src="'. $row['FrameImage'] .'">
+
            </a>
            <ul class="social">
-               <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+               <li><a href="'.ROOT.'productPage/'.$row['FrameDescription'].'" data-tip="View Product"><i class="fa fa-eye"></i></a></li>
                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
            </ul>
            
@@ -86,8 +88,11 @@ if(isset($_POST["action"]))
        <div class="product-content">
            <h3 class="title"><a href="#">' . $row['FrameDescription'] . '</a></h3>
            <div class="price">' . $row['FramePrice'] . ' EGP</div>
-           
-           <a class="add-to-cart" href="">ADD TO CART</a>
+           <form method="post" >
+            <input type="submit" name="addToCart-Gallery" class="add-to-cart" value="Add to Cart">
+            <input type="hidden" name="desc" value="'. $row['FrameDescription'] .'">
+           </form>
+          
        </div>
    </div>
 </div>';
