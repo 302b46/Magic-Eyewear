@@ -124,6 +124,25 @@ class User
 
     }//End of logout()
 
+    function editProfile($POST)
+    {
+        $database = new Database();
+
+        if ($_SESSION['userType']==2){
+            if(isset($POST['save'])){
+
+                $editProfileArr['firstname'] = $POST['firstname'];
+                $editProfileArr['lastname'] = $POST['lastname'];
+                $editProfileArr['email'] = $POST['email'];
+               
+                $email = $editProfileArr['email'];
+
+                $editProfileQuery= "UPDATE user SET FirstName=:firstname, LastName=:lastname WHERE UserID='$_SESSION[userID]'";
+                
+                $userData = $database->write($editProfileQuery, $editProfileArr);
+            }
+        }
+    }
 
 
 } //End of class
