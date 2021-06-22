@@ -9,6 +9,8 @@ $(document).ready(function() {
                 var brand = get_filter('brand');
                 var color = get_filter('color');
                 var gender = get_filter('gender');
+                var frametype = get_filter('frametype');
+                var frameshape = get_filter('frameshape');
                 $.ajax({
                     url: "./Fetch",
                     method: "POST",
@@ -16,9 +18,12 @@ $(document).ready(function() {
                         action: action,
                         minimum_price: minimum_price,
                         maximum_price: maximum_price,
+                        gender: gender,
+                        frametype: frametype,
                         brand: brand,
                         color: color,
-                        gender: gender
+                        frameshape:frameshape
+                        
                     },
                     success: function(data) {
                         console.log(data);
@@ -42,9 +47,9 @@ $(document).ready(function() {
             $('#price_range').slider({
                 range: true,
                 min: 0,
-                max: 2000,
-                values: [10, 300],
-                step: 10,
+                max: 5000,
+                values: [0, 5000],
+                step: 100,
                 stop: function(event, ui) {
                     $('#price_show').html(ui.values[0] + ' - ' + ui.values[1]);
                     $('#min_price_hide').val(ui.values[0]);

@@ -75,8 +75,8 @@ var x = document.getElementById("filtersbar");
                 <div class="list-group">
                     <h3>Price</h3>
                     <input type="hidden" id="min_price_hide" value="0" />
-                    <input type="hidden" id="max_price_hide" value="2000" />
-                    <p id="price_show">10 EGP - 2000 EGP</p>
+                    <input type="hidden" id="max_price_hide" value="5000" />
+                    <p id="price_show">0 EGP - 5000 EGP</p>
                     <div id="price_range"></div>
                 </div>
 
@@ -93,6 +93,25 @@ var x = document.getElementById("filtersbar");
                         <div class="list-group-item checkbox">
                             <label>
                                 <input type="checkbox" class="filter_all gender" value="<?php echo $row['GenderType']; ?>"  > <?php echo $row['GenderType']; ?> </label>
+                        </div>
+                        <?php
+                    }
+                    ?>
+                </div>
+
+                <div class="list-group">
+                    <h3>Frame Type</h3>
+                    <?php
+                    $query = "SELECT DISTINCT(TypeName) FROM frametype ORDER BY FrameTypeID ASC";
+                    $statement = $connect->prepare($query);
+                    $statement->execute();
+                    $result = $statement->fetchAll();
+                    foreach($result as $row)
+                    {
+                    ?>
+                        <div class="list-group-item checkbox">
+                            <label>
+                                <input type="checkbox" class="filter_all frametype" value="<?php echo $row['TypeName']; ?>"  > <?php echo $row['TypeName']; ?> </label>
                         </div>
                         <?php
                     }
@@ -134,6 +153,27 @@ var x = document.getElementById("filtersbar");
                                 <label>
                                     <input type="checkbox" class="filter_all color" value="<?php echo $row['ColorName']; ?>">
                                     <?php echo $row['ColorName']; ?>
+                                </label>
+                            </div>
+                            <?php
+                    }
+                    ?>
+                </div>
+
+                <div class="list-group">
+                    <h3>Frame Shape</h3>
+                    <?php
+                    $query = "SELECT DISTINCT(FrameShapeName) FROM frameshape ORDER BY FrameShapeID DESC";
+                    $statement = $connect->prepare($query);
+                    $statement->execute();
+                    $result = $statement->fetchAll();
+                    foreach($result as $row)
+                    {
+                    ?>
+                            <div class="list-group-item checkbox">
+                                <label>
+                                    <input type="checkbox" class="filter_all frameshape" value="<?php echo $row['FrameShapeName']; ?>">
+                                    <?php echo $row['FrameShapeName']; ?>
                                 </label>
                             </div>
                             <?php
