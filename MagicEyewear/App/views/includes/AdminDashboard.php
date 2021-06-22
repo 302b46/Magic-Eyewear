@@ -35,7 +35,7 @@
 
     <div class="header">
         <div class="header-left">
-			<a href="<?=ROOT?>logout" style="padding-left:50px;" ><button type="submit" style="width:100px; "> Sign out </button></a>
+			<a href="<?=ROOT?>logout" style="padding-left:50px;" ><button class="button button1" style="height:40px;" type="submit" style="width:100px; "> Sign out </button></a>
 		</div>
         <div class="header-right" style="padding-top:25px; padding-right:30px;">
             
