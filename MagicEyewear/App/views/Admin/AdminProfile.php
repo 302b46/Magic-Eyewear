@@ -4,6 +4,7 @@
 
 <!-- Contains editing admin credentials -->
 
+<?php    $pdo = new PDO("mysql:host=localhost;dbname=magic_eyewear","root","");  ?>
 <html>
 <body>
 
