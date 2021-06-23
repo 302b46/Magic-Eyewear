@@ -146,6 +146,29 @@ public function write($query, $data=[])
         }
     
       }
+	
+	/* Admin Side */
+      public function CountUsers($query) 
+      {
+          $database = $this->database_connection(); 
+          $statement = $database->prepare($query);
+          $statement->execute();
+          $count= $statement->rowCount();
+        
+          return $count;
+      }
+      public function View($query) {
+          $database = $this->database_connection(); 
+          $statement = $database ->query($query);
+          return $statement; 
+      } 
+      public function AddFrames($query,$arrayf) {
+        $database = $this->database_connection(); 
+        $statement = $database ->prepare($query);
+        $statement ->execute($arrayf);
+        return $statement;
+      } 
+	
 
 } // End of class
 
