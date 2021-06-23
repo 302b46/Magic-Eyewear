@@ -127,6 +127,7 @@
                                         $type =$_POST["type"];
                                         $img = $_POST["image"];
                                         $desc =$_POST["desc"];
+                                        
                                         $sql = "INSERT into frame(FrameCode,FrameType,FrameBrand,FrameDescription,FrameColor,
                                         FrameRim,FrimMaterial,AssignedGender,FrameSize,FrameImage,FrameShape,FramePrice)
                                         VALUES(:fc,:ft,:fb,:fd,:fcl,:fr,:fm,:fg,:fs,:fi,:fsh,:fp)";
@@ -163,8 +164,20 @@
                                 </div>
                                 <form method="post">
                                     <div class="modal-body">
+                                    <input type="text" class="form-control form-control-lg" placeholder="FrameID" name="id"> <br>
                                     <input type="text" class="form-control form-control-lg" placeholder="Code" name="code"> <br>
-                                            <input type="text" class="form-control form-control-lg" placeholder="Brand Name" name="brandname"> <br>
+                                    <select class="form-control form-control-lg" name="brandname">
+                                                        <option selected="">Brand Name</option>
+                                                        <option value="1">ARMANI EXCHANGE</option>
+                                                        <option value="2">Tommy Hilfiger</option>
+                                                        <option value="2">Polaroid</option>
+                                                        <option value="2">HUGO</option>
+                                                        <option value="2">SEVENTH STREET</option>
+                                                        <option value="2">Pierre Cardin</option>
+                                                        <option value="2">RAY BAN</option>
+                                                        <option value="2">Ralph Lauren</option>
+                                                        <option value="2">Diva</option>
+                                            </select> <br>
                                             <select class="form-control form-control-lg" name="rim">
                                                         <option selected="">Rim</option>
                                                         <option value="1">Full Rim</option>
@@ -227,6 +240,7 @@
                             </div>
                         <?php  
                             if(isset($_POST["submitEdiFrame"])){
+
                                 $code = $_POST["code"];
                                 $brandname = $_POST["brandname"];
                                 $rim = $_POST["rim"];
@@ -239,8 +253,28 @@
                                 $type =$_POST["type"];
                                 $img = $_POST["image"];
                                 $desc =$_POST["desc"];
-                                $sql="UPDATE * IN frame"; 
 
+                                $data = [
+                                    'code' => $code,
+                                    'brandname' => $brandname,
+                                    'rim' => $rim,
+                                    'size' => $size,
+                                    'color' => $color,
+                                    'shape' => $shape,
+                                    'material' => $material,
+                                    'price' => $price,
+                                    'gender' => $gender,
+                                    'type' => $type,
+                                    'img' => $img,
+                                    'desc' => $desc,
+                                    
+                                ];
+                                $id = $_POST["id"];
+                                $sql="UPDATE user SET FrameCode=:code, FrameType=:type, FrameBrand=:brandname, FrameDescription=:desc,
+                                FrameColor=:color, FrameRim=:rim, FrameMaterial=:material, AssignedGender=:gender, FrameSize=:size,
+                                FrameImg=:img, FrameShape=:shape, FramePrice=:price WHERE FrameID=:id "; 
+                                $stmt= $pdo->prepare($sql);
+                                $stmt->execute($data);
                             }
                         ?>
 
@@ -271,7 +305,7 @@
 					</div>
 
 			    
-                    <table class="styled-table">
+    <table class="styled-table">
     
     <thead>
         <tr>
@@ -293,34 +327,69 @@
         </tr>
     </thead>
     <tbody>
-           
+        
             <?php $query = "SELECT * from frame";
             $d =$pdo -> query($query);
             foreach($d as $data){ ?> 
+            <tr> 
              <form method="post">
-            <th><?php echo $data['FrameID']; ?></th>
-            <th><?php echo $data['FrameCode'] ; ?></th>
-            <th><?php echo $data['FrameType'] ; ?></th>
-            <th><?php echo $data['FrameBrand'] ; ?></th>
-            <th><?php echo  $data['FrameColor']?></th>
-            <th><?php echo  $data['FrameRim'] ; ?></th>
-            <th><?php echo  $data['FrameMaterial']  ; ?></th>
-            <th><?php echo  $data['AssignedGender'] ; ?></th>
-            <th><?php echo  $data['FrameSize'] ; ?></th>
-            <th><?php echo  $data['FramePrice']  ; ?></th>
-            <th><?php echo  $data['FrameShape'] ; ?></th>
-            <th><?php echo  $data['FrameDescription'] ; ?></th>
-            <th><?php echo  $data['FrameImage'] ; ?></th>
-            <th><input type="checkbox" id="check" name="checkframe" ></th> 
+                <td><?php echo $data['FrameID']; ?></td>
+                <td><?php echo $data['FrameCode'] ; ?></td>
+                <td><?php //echo $data['FrameType'] ;
+                if($data['FrameType'] =="1"){  echo "Optical";  }
+                if($data['FrameType'] =="2"){  echo "Sunglasses";  }
+                if($data['FrameType'] =="3"){  echo "Eyeglasses";  } ?></td>
+                <td><?php echo $data['FrameBrand'] ; ?></td>
+                <td><?php //echo  $data['FrameColor'];
+                if($data['FrameColor'] =="1"){  echo "Black";  }
+                if($data['FrameColor'] =="2"){  echo "Gray";  }
+                if($data['FrameColor'] =="3"){  echo "Red";  }
+                if($data['FrameColor'] =="4"){  echo "Blue";  }
+                if($data['FrameColor'] =="5"){  echo "White";  }
+                if($data['FrameColor'] =="6"){  echo "Transparent";  }
+                ?></td>
+                <td><?php //echo $data['FrameRim'] ; 
+                if($data['FrameRim'] =="1"){
+                    echo 'FullRim';
+                } 
+                if($data['FrameRim'] =="2"){  echo "Half-Rim";  }
+                if($data['FrameRim'] =="3"){  echo "Rim-less";  }
+                 ?></td>
+                <td><?php //echo  $data['FrameMaterial'] ; 
+                if($data['FrameMaterial'] =="1"){  echo "Polycarbonate";  }
+                if($data['FrameMaterial'] =="2"){  echo "Stainless Steel";  }
+                if($data['FrameMaterial'] =="3"){  echo "Acetate";  }
+                if($data['FrameMaterial'] =="4"){  echo "Metal";  }
+                if($data['FrameMaterial'] =="5"){  echo "Eco-Polyamide";  } ?></td>
+                <td><?php //echo  $data['AssignedGender'] ;
+                if($data['AssignedGender'] =="1"){  echo "Women";  }
+                if($data['AssignedGender'] =="2"){  echo "Men";  } 
+                if($data['AssignedGender'] =="3"){  echo "Girls";  } 
+                if($data['AssignedGender'] =="4"){  echo "Boys";  } ?></td>
+                <td><?php echo  $data['FrameSize'] ; ?></td>
+                <td><?php echo  $data['FramePrice']  ; ?></td>
+                <td><?php //echo  $data['FrameShape'];
+                if($data['FrameShape'] =="1"){  echo "Cat Eye";  }
+                if($data['FrameShape'] =="2"){  echo "Round";  } 
+                if($data['FrameShape'] =="3"){  echo "Rectangle";  } 
+                if($data['FrameShape'] =="4"){  echo "Square";  }
+                if($data['FrameShape'] =="5"){  echo "Oval";  }
+                if($data['FrameShape'] =="6"){  echo "Geometric";}
+                if($data['FrameShape'] =="7"){  echo "Browline";  }
+                if($data['FrameShape'] =="8"){  echo "Aviator"; } ?></td>
+                <td><?php echo  $data['FrameDescription'] ; ?></td>
+                <td><?php echo  $data['FrameImage'] ; ?></td>
+                <td><input type="checkbox" id="check" name="checkframe" ></td> 
             <?php  } ?>
             </form>
-        <tr> 
+        
         
         </tr>
      
         
             
-        
+    </tbody>
+    </table>   
 
     </div>
     </div>
